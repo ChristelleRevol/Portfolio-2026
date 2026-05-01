@@ -1,0 +1,75 @@
+.avatar-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.avatar {
+  position: relative;
+  width: 250px;
+  z-index: 2;
+}
+
+.avatar-texts {
+  display: flex;
+  z-index: 2;
+  color: var(--text-primary);
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.highlight {
+  color: var(--text-orange);
+  font-weight: 500;
+}
+
+.avatar-bg {
+  position: absolute;
+  pointer-events: none; /* important */
+  inset: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.bg {
+  position: absolute;
+  z-index: 1;
+  width: 1300px;
+  top: 0;
+  margin: auto;
+}
+
+.avatar-text-descr {
+  margin: 35px 25px;
+}
+
+.avatar-text-hello {
+  text-align: right;
+}
+
+.avatar-text-name {
+  text-align: right;
+  font-family: "Nunito", sans-serif;
+  color: var(--text-orange);
+  font-size: 40px;
+  line-height: 90%;
+  font-weight: 600;
+}
+
+.avatar-text-lastname {
+  text-align: right;
+  font-family: "Nunito", sans-serif;
+  color: var(--text-orange);
+  font-size: 68px;
+  line-height: 90%;
+  font-weight: 600;
+}
+
+.buttons-logos {
+  position: relative;
+  z-index: 2;
+}

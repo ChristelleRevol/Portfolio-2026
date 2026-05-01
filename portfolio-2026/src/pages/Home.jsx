@@ -1,6 +1,13 @@
+import HomeDescription from "../components/Home_description"
+import HomeServices from "../components/Home_services"
+
 const Home = () => {
   return (
-    <p>Coucou</p>
+    <div className="home-container">
+      <HomeDescription />
+      <HomeServices />
+    </div>
+
   )
 }
 

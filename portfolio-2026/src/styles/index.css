@@ -1,4 +1,29 @@
-#root {
+:root {
   background: rgb(255, 255, 255);
   width: 100%;
+
+  --color-darkindigo: rgb(60, 71, 142);
+  --color-indigo: rgb(129, 136, 240);
+  --color-clearindigo: rgb(234, 235, 255);
+  --text-orange: rgb(214, 94, 29);
+  --text-clearorange: rgb(255, 134, 68);
+  --btn-orange: rgb(255, 117, 42);
+  --text-primary: rgb(8, 10, 22);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main {
+  flex: 1;
 }

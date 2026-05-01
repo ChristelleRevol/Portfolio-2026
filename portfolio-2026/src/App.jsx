@@ -7,13 +7,17 @@ import Contact from './pages/Contact'
 
 const App = () => {
   return (
-    <div>
+    <div className='app'>
       <Navbar />
+
+      <main className="content">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      </main>
+
       <Footer />
     </div>
   )

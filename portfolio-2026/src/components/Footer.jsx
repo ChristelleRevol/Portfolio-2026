@@ -7,8 +7,8 @@ import github from "../assets/images/logos/github.svg"
 
 const Footer = () => {
   return (
-    <footer>
-      <div>
+    <footer className="footer">
+      <div className="footer-logos-group">
         <a href="https://fr.linkedin.com/in/christelle-revol-458923130" target="_blank">
           <img src={linkedin} alt="linkedin link" className="footer-logo"/>
         </a>
@@ -17,14 +17,24 @@ const Footer = () => {
         </a>
       </div>
 
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/contact">Contact</Link>
-    </nav>
+      <div className="footer-bottom">
+        <div className="footer-name">
+          <p>Christelle</p>
+          <p>Revol</p>
+        </div>
 
-    <div>
-      <p>christellerevol.works@gmail.com</p>
+      <nav className="footer-menu">
+        <Link to="/">Home</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
+
+      <div className="footer-contact">
+        <p>christellerevol.works@gmail.com</p>
+        <a href="/contact" class="footer-contact-btn">
+          Contact me
+        </a>
+      </div>
     </div>
     </footer>
   )
