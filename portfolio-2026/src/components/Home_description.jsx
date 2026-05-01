@@ -1,8 +1,13 @@
 import avatar from "../assets/images/SVG/Round_avatar.svg"
 import bg from "../assets/images/SVG/Av_bg+grid.svg"
+import monitorLogo from "../assets/images/logos/monitor.svg"
+import linkedinLogo from "../assets/images/logos/linkedin.svg"
+import githubLogo from "../assets/images/logos/github.svg"
+import verticalLine from "../assets/images/SVG/Line-vertical.svg"
 
 import "../styles/Home_description.css"
 import CvModal from "./Cv_modal"
+import BtnContact from "./Btn_contact"
 
 const HomeDescription = () => {
   return (
@@ -23,7 +28,19 @@ const HomeDescription = () => {
         </div>
 
         <div className="buttons-logos">
-          <CvModal />
+          <div className="description-btns">
+            <BtnContact />
+            <a href="/projects" className="clearindigo-btn">
+              <img src={monitorLogo} alt="projects logo" className="indigo-logo" />
+              View projects
+            </a>
+            <CvModal />
+          </div>
+          <div className="description-logos">
+            <img src={verticalLine} alt="separation line"/>
+            <img src={linkedinLogo} alt="linkedin logo" className="logo-color-size"/>
+            <img src={githubLogo} alt="github logo" className="logo-color-size"/>
+          </div>
         </div>
 
 

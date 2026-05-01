@@ -71,5 +71,52 @@
 
 .buttons-logos {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+.description-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+}
+
+.indigo-logo {
+  width: 30px;
+  margin-right: 10px;
+  filter: brightness(0) saturate(100%) invert(51%) sepia(60%) saturate(596%) hue-rotate(199deg) brightness(99%) contrast(90%);
+}
+
+.clearindigo-btn {
+  padding: 5px 0;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-indigo);
+  cursor: pointer;
+  background: var(--color-clearindigo);
+  color: var(--color-indigo);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+}
+
+.description-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 150px;
+}
+
+.logo-color-size {
+  width: 30px;
+  filter: brightness(0) saturate(100%) invert(51%) sepia(60%) saturate(596%) hue-rotate(199deg) brightness(99%) contrast(90%);
 }
