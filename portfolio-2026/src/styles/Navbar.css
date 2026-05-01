@@ -1,4 +1,29 @@
 .nbar {
-  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 0 3%;
+  height: 80px;
+  z-index: 2;
+}
 
+.nbar-name {
+  font-family: "Nunito", sans-serif;
+  color: var(--text-orange);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.nbar a {
+  font-family: "Manrope", sans-serif;
+  text-decoration: none;
+  color: rgb(8, 10, 22);
+  font-size: 16px;
+}
+
+.nbar-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
 }
