@@ -152,14 +152,32 @@
 
 .white-logo-group {
   display: flex;
-  justify-content: space-evenly;
-  width: 130%;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 30px 0 15px 0;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scroll 30s linear infinite;
+  padding-right: 60px;
+}
+
+/* animation clé */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .white-logo {
   width: 50px;
   height: auto;
   object-fit: contain;
+  flex-shrink: 0;
 }
