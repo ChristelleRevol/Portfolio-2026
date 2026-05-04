@@ -38,8 +38,12 @@ const HomeDescription = () => {
           </div>
           <div className="description-logos">
             <img src={verticalLine} alt="separation line"/>
-            <img src={linkedinLogo} alt="linkedin logo" className="logo-color-size"/>
-            <img src={githubLogo} alt="github logo" className="logo-color-size"/>
+            <a href="https://www.linkedin.com/in/christelle-revol-458923130/" target="_blank">
+              <img src={linkedinLogo} alt="linkedin logo" className="logo-color-size"/>
+            </a>
+            <a href="https://github.com/ChristelleRevol" target="_blank">
+              <img src={githubLogo} alt="github logo" className="logo-color-size"/>
+            </a>
           </div>
         </div>
 

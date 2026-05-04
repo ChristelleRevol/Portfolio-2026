@@ -109,6 +109,12 @@
   text-decoration: none;
 }
 
+.clearindigo-btn:hover {
+  background: rgb(60, 71, 142);
+  box-shadow: 0 0 10px rgb(129, 136, 240);
+  transition-duration: 0.3s;
+}
+
 .description-logos {
   display: flex;
   align-items: center;
@@ -119,4 +125,10 @@
 .logo-color-size {
   width: 30px;
   filter: brightness(0) saturate(100%) invert(51%) sepia(60%) saturate(596%) hue-rotate(199deg) brightness(99%) contrast(90%);
+  cursor: pointer;
+}
+
+.logo-color-size:hover {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(50%) saturate(1326%) hue-rotate(204deg) brightness(95%) contrast(85%);
+  transition-duration: 0.3s;
 }

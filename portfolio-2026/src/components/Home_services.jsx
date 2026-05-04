@@ -1,5 +1,5 @@
 import "../styles/Home_services.css"
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import code from "../assets/images/logos/code.svg"
 import stack from "../assets/images/logos/stack.svg"
 import palette from "../assets/images/logos/palette.svg"

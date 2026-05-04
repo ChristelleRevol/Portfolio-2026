@@ -16,6 +16,11 @@
   filter: brightness(0) saturate(100%) invert(58%) sepia(10%) saturate(6700%) hue-rotate(207deg) brightness(99%) contrast(90%);
 }
 
+.footer-logo:hover {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(40%) saturate(1725%) hue-rotate(210deg) brightness(90%) contrast(94%);
+  transition-duration: 0.3s;
+}
+
 .footer-bottom {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -50,6 +55,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
 }
 
 .footer-contact-btn {

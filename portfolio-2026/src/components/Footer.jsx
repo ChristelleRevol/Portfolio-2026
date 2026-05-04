@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 
 import linkedin from "../assets/images/logos/linkedin.svg"
 import github from "../assets/images/logos/github.svg"
+import BtnContact from "./Btn_contact"
 
 const Footer = () => {
   return (
@@ -31,9 +32,7 @@ const Footer = () => {
 
       <div className="footer-contact">
         <p>christellerevol.works@gmail.com</p>
-        <a href="/contact" class="footer-contact-btn">
-          Contact me
-        </a>
+        <BtnContact />
       </div>
     </div>
     </footer>
