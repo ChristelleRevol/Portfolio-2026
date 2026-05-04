@@ -1,11 +1,13 @@
 .banner-container {
   background: var(--color-darkindigo);
   width: 100%;
-  display: flex;
-  /* justify-content: center; */
+  height: 97px; /* hauteur exacte de ton SVG */
+  overflow: hidden;
 }
 
 .services-container {
+  flex-shrink: 0;
+  display: block;
   position: relative;
   z-index: 2;
 }
@@ -16,6 +18,14 @@
   font-size: 30px;
   font-weight: 700;
   margin-top: 30px;
+}
+
+.services-banner {
+  display: block;
+  width: 2949px;
+  height: 97px;
+  transform-origin: left center;
+  will-change: transform;
 }
 
 .services-main {

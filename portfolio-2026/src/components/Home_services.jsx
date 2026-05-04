@@ -1,4 +1,5 @@
 import "../styles/Home_services.css"
+import { useEffect, useRef, useState } from "react";
 import code from "../assets/images/logos/code.svg"
 import stack from "../assets/images/logos/stack.svg"
 import palette from "../assets/images/logos/palette.svg"
@@ -28,10 +29,48 @@ import wordpress from "../assets/images/white_logos/WordPress_White.png"
 import banner from "../assets/images/SVG/Services_banner.svg"
 
 const HomeServices = () => {
+  const bannerRef = useRef(null);
+  const startScrollRef = useRef(0);
+
+  useEffect(() => {
+    const banner = bannerRef.current;
+    if (!banner) return;
+
+    // 🔥 position du scroll au moment du load
+    startScrollRef.current = window.scrollY;
+
+    const handleScroll = () => {
+      const scrollDelta = window.scrollY - startScrollRef.current;
+
+      const maxTranslate = banner.offsetWidth - window.innerWidth;
+
+      // 🔥 distance de scroll dispo jusqu'à ce que la bannière atteigne le haut
+      const rect = banner.getBoundingClientRect();
+      const distanceToTop = rect.top;
+
+      // On calcule la zone totale sur laquelle l'anim doit se faire
+      const totalScrollNeeded = startScrollRef.current + distanceToTop;
+
+      const progress = Math.min(
+        Math.max(scrollDelta / totalScrollNeeded, 0),
+        1
+      );
+
+      const translateX = progress * maxTranslate;
+
+      banner.style.transform = `translateX(-${translateX}px)`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="services-container">
       <div className="banner-container">
-        <img src={banner} alt="services sum-up" className="services-banner"/>
+        <img src={banner} alt="services sum-up" className="services-banner" ref={bannerRef}/>
       </div>
 
       <div className="services-main">
