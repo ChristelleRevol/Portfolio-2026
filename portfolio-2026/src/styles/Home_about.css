@@ -1,0 +1,51 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-right {
+  margin-top: 300px;
+  width: 35%;
+}
+
+.text-orange {
+  color: var(--text-orange);
+}
+
+.about-text {
+  font-family: "Manrope", sans-serif;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.question-text {
+  font-family: "Manrope", sans-serif;
+  color: var(--text-primary);
+  font-size: 14px;
+  width: 60%;
+}
+
+.text-and-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.photo {
+  width: 700px;
+}
+
+.about-top {
+  display: flex;
+  justify-content: center;
+}
+
+.about-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.path-img {
+  width: 50%;
+  margin-right: 5%;
+}

@@ -1,3 +1,4 @@
+import HomeAbout from "../components/Home_about"
 import HomeDescription from "../components/Home_description"
 import HomeServices from "../components/Home_services"
 
@@ -6,6 +7,7 @@ const Home = () => {
     <div className="home-container">
       <HomeDescription />
       <HomeServices />
+      <HomeAbout />
     </div>
 
   )
