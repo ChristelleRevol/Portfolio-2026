@@ -2,7 +2,7 @@
   background: var(--color-darkindigo);
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .services-container {
