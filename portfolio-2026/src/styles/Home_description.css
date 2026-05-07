@@ -112,6 +112,12 @@
 .clearindigo-btn:hover {
   background: rgb(60, 71, 142);
   box-shadow: 0 0 10px rgb(129, 136, 240);
+  color: white;
+  transition-duration: 0.3s;
+}
+
+.clearindigo-btn:hover .indigo-logo {
+  filter: brightness(0) invert(1);
   transition-duration: 0.3s;
 }
 

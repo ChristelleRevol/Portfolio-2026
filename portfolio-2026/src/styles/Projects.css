@@ -1,0 +1,11 @@
+.projects-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.projects-container h1 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: var(--text-orange);
+}

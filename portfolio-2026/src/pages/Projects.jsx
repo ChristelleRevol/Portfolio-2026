@@ -1,5 +1,10 @@
+import "../styles/Projects.css"
+
 const Projects = () => {
-  return <div></div>
+  return (
+    <div className="projects-container">
+      <h1>Projects</h1>
+    </div>)
 }
 
 export default Projects

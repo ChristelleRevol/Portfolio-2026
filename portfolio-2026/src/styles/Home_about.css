@@ -1,11 +1,14 @@
 .about-container {
   display: flex;
   flex-direction: column;
+  /* background: white; */
+  /* width: 80%;
+  margin: 0 auto; */
 }
 
 .about-right {
-  margin-top: 300px;
-  width: 35%;
+  margin-top: 240px;
+  width: 28%;
 }
 
 .text-orange {
@@ -33,6 +36,7 @@
 
 .photo {
   width: 700px;
+  object-fit: contain;
 }
 
 .about-top {
