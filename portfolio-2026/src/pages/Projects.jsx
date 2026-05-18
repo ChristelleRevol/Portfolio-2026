@@ -40,7 +40,7 @@ const Projects = () => {
       </div>
 
       <div className="grid-container">
-        <div className={`grid ${activeFilter.length === 0 ? "grid--default" : ""}`}>
+        <div className={`grid grid--${activeFilter || "default"}`}>
           {filteredProjects.map((project) => (
             <ImageCards key={project.className} {...project}/>
           ))}
