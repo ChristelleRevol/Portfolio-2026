@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Projects from './pages/Projects';
+import ProjectDetail from "./components/ProjectDetail.jsx"
 import Contact from './pages/Contact'
 import ParticlesBackground from './components/ParticlesBackground';
 
@@ -18,6 +19,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         </main>
