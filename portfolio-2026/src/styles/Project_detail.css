@@ -1,0 +1,77 @@
+.project-container {
+  display: flex;
+  margin: 20px auto;
+  width: 90%;
+  background: rgb(185, 108, 108);
+}
+
+.carousel-container {
+  width: 70%;
+  background-image: url("../assets/images/SVG/bg_projects.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.screenshot-wrapper {
+  width: 70%;
+  height: 600px;
+  overflow-y: scroll;   /* active le scroll vertical */
+
+  /* Scrollbar pour Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #3c468e rgba(60, 70, 142, 0.2);
+}
+
+/* Scrollbar pour Chrome, Safari, Edge */
+.screenshot-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+.screenshot-wrapper::-webkit-scrollbar-track {
+  background: rgba(60, 70, 142, 0.2);
+  border-radius: 3px;
+}
+.screenshot-wrapper::-webkit-scrollbar-thumb {
+  background: #3c468e;
+  border-radius: 3px;
+}
+.screenshot-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #5a66b0;    /* légèrement plus clair au survol */
+}
+
+.screenshots {
+  width: 100%;
+}
+
+.dots {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.dot {
+  width: 6px;
+  filter: brightness(0) saturate(100%) invert(28%) sepia(8%) saturate(4713%) hue-rotate(196deg) brightness(93%) contrast(91%);
+  margin: 2px;
+}
+
+.dot-active {
+  width: 6px;
+  margin: 2px;
+  filter: brightness(0) saturate(100%) invert(52%) sepia(9%) saturate(3424%) hue-rotate(199deg) brightness(104%) contrast(101%);
+}
+
+.arrows {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(23%) sepia(14%) saturate(5664%) hue-rotate(210deg) brightness(96%) contrast(84%);
+  background: rgba(60, 70, 142, 0.3);
+}
+
+.project-info {
+  width: 25%;
+}

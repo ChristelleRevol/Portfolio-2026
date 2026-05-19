@@ -25,7 +25,7 @@ import Dixcit1 from "../assets/images/Screenshots/Services.png"
 import Dixcit2 from "../assets/images/Screenshots/Clients.png"
 import Dixcit3 from "../assets/images/Screenshots/Contact.png"
 
-export const ProjectDetailData = [
+export const projectDetailsData = [
   { id: "emity", title: "Emity",
     description: "Concept and development of templates to demonstrate the capabilities of the internal E-Click software to clients.",
     list: ["Concept and prototype on Figma", "Learning of the E-Click software", "Template creation on E-Click"],
