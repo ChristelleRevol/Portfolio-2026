@@ -31,7 +31,9 @@ const Footer = () => {
       </nav>
 
       <div className="footer-contact">
-        <p>christellerevol.works@gmail.com</p>
+        <a href="mailto:christellerevol.works@gmail.com">
+						christellerevol.works@gmail.com
+				</a>
         <BtnContact />
       </div>
     </div>

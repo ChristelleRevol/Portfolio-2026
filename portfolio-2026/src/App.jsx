@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation, useMatch } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -7,11 +7,28 @@ import ProjectDetail from "./components/ProjectDetail.jsx"
 import Contact from './pages/Contact'
 import ParticlesBackground from './components/ParticlesBackground';
 
+const PARTICLES_CONFIG = {
+  "/":          { maskLeft: "18%", maskWidth: "64%" },      // masque standard
+  "/projects":  { maskLeft: "15%", maskWidth: "70%" },      // masque plus large
+  "/contact":   { maskLeft: "25%", maskWidth: "50%" }
+};
+
 const App = () => {
+  const location = useLocation();
+  const isProjectDetail = useMatch("/projects/:id");
+
+  const particlesConfig = (() => {
+    // Cas 3 : page dynamique → aucune particule
+    if (isProjectDetail) return { noMask: true };
+
+    // Config par route exacte, sinon config par défaut
+    return PARTICLES_CONFIG[location.pathname] ?? { maskLeft: "18%", maskWidth: "64%" };
+  })();
+
   return (
     <div className='app'>
 
-      <ParticlesBackground />
+      <ParticlesBackground {...particlesConfig}/>
 
         <Navbar />
 

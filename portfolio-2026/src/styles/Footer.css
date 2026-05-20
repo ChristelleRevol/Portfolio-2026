@@ -35,7 +35,7 @@
 }
 
 .footer-name {
-  color: var(--text-orange);
+  color: var(--text-clearorange);
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 50px;
@@ -57,7 +57,7 @@
   align-items: flex-end;
 }
 
-.footer-contact p {
+.footer-contact a {
   margin-bottom: 10px;
 }
 

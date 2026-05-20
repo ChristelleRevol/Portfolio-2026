@@ -4,14 +4,12 @@ import "../styles/Navbar.css"
 const Navbar = () => {
   return (
   <header className="nbar">
-    <Link>
-      <p className="nbar-name">Christelle Revol</p>
-    </Link>
+    <Link to="/" className="nbar-name">Christelle Revol</Link>
 
     <nav className="nbar-menu">
-      <Link to="/">Home</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/contact">Contact</Link>
+      <Link to="/" className="nbar-menu-text">Home</Link>
+      <Link to="/projects" className="nbar-menu-text">Projects</Link>
+      <Link to="/contact" className="nbar-menu-text">Contact</Link>
     </nav>
   </header>
   )
