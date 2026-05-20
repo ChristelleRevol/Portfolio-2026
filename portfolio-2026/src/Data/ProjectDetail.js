@@ -19,7 +19,7 @@ import Suzie3 from "../assets/images/Screenshots/Gallerie.png"
 import Suzie4 from "../assets/images/Screenshots/Ateliers.png"
 import Suzie5 from "../assets/images/Screenshots/Contact_Suzie.png"
 
-import ColorPicker from "../assets/images/Screenshots/colorPicker.png"
+import ColorPicker from "../assets/images/SVG/colorPicker.svg"
 
 import Dixcit1 from "../assets/images/Screenshots/Services.png"
 import Dixcit2 from "../assets/images/Screenshots/Clients.png"

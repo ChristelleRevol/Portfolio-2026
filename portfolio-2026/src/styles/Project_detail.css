@@ -52,6 +52,7 @@
 
 .screenshots {
   width: 100%;
+  display: block;
 }
 
 .dots {
