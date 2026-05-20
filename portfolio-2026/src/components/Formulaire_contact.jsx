@@ -1,12 +1,17 @@
 import { useState } from "react"
 
 const FormulaireContact = () => {
+  const [clicked, setClicked] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   })
   const [status, setStatus] = useState("")
+
+  const handleClick = () => {
+		setClicked(true);
+	};
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -45,30 +50,50 @@ const FormulaireContact = () => {
 
   return (
     <div>
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="name"
-        placeholder="Name"
-        value={formData.name}
-        onChange={handleChange}
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Email"
-        value={formData.email}
-        onChange={handleChange}
-      />
-      <textarea
-        name="message"
-        placeholder="Message"
-        value={formData.message}
-        onChange={handleChange}
-      />
-      <button type="submit">Envoyer</button>
-    </form>
-    {status && <p class="status-msg">{status}</p>}
+      <div class="form">
+        <h2 class="form-text">Contactez-moi</h2>
+        <form onSubmit={handleSubmit}>
+          <div class="form-inside">
+            <div class="inputs-group">
+              <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              className="form-background-color form-margin-right form-text"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="form-background-color form-text"
+            />
+            </div>
+
+            <textarea
+              name="message"
+              placeholder="Message"
+              value={formData.message}
+              onChange={handleChange}
+              className="form-background-color form-text"
+            />
+            <button type="submit"
+              onClick={handleClick}
+              className={!clicked ? "submit-btn" : "btn-clicked"}
+            >
+              Envoyer
+            </button>
+          </div>
+
+        </form>
+        {status && <p class="status-msg">{status}</p>}
+      </div>
+
     </div>
   )
 }

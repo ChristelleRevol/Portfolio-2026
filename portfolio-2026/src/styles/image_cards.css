@@ -112,9 +112,10 @@
 
 /* Chaque mot-clé */
 .keyword-tag {
+  font-family: "Nunito", sans-serif;
   color: white;
   background: var(--color-indigo) ;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 5px 10px;
   border-radius: 50px;   /* bords complètement arrondis */

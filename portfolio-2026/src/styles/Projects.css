@@ -118,8 +118,15 @@
   user-select: none;
 }
 
+.filter:hover {
+  background: var(--color-darkindigo);
+  transition-duration: 0.3s;
+}
+
 .filter.active {
   background: var(--color-darkindigo);
+  box-shadow: 0 0 10px rgb(129, 136, 240);
+  transform: scale(1.05);
 }
 
 /* =========================

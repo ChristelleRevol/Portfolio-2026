@@ -13,17 +13,43 @@
   color: var(--text-orange);
   font-size: 28px;
   font-weight: 600;
+  text-decoration: none;
 }
 
-.nbar a {
+.nbar-menu-text {
+  position: relative;
   font-family: "Manrope", sans-serif;
   text-decoration: none;
   color: rgb(8, 10, 22);
   font-size: 16px;
 }
 
+.nbar-menu-text:hover {
+  color: var(--color-indigo);
+  transition: 0.3s;
+  font-weight: 600;
+}
+
 .nbar-menu {
   display: flex;
   justify-content: space-between;
   width: 15%;
+}
+
+.nbar-menu-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-indigo);
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.nbar-menu-text:hover::after, .nbar-menu-text:focus::after {
+  transform: scale(1);
 }

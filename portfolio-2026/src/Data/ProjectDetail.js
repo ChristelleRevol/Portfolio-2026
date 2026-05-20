@@ -41,7 +41,7 @@ export const projectDetailsData = [
   { id: "color-picker", title: "color picker feature",
     description: "Pair-programming on the integration of a new feature into an existing project.\nThis feature allows the creation of color dictionaries so that users can customize the appearance of their data displayed on dashboards",
     list: ["Migration of new data with Active Record", "Vibe-coding with Claude via Aument", "Feature development with React and Typescript", "Use custom UI/UX library for the application"],
-    keywords: ["Javascript", "Typescript", "React", "Claude", "Augment"], images: ColorPicker},
+    keywords: ["Javascript", "Typescript", "React", "Claude", "Augment"], images: [ColorPicker]},
   { id: "ai-duel", title: "AI-Duel",
     description: "Group development of the AI-Duel application aimed at evaluating the performance of ChatGPT, Claude and Mistral through user votes.\nResponsibilities included UI/UX, front-end and back-end of the voting and ranking system, vectorial graphism, and deployment.",
     list: ["UI/UX on Figma", "Database setup and migration with PostgreSQL and Active Record",
