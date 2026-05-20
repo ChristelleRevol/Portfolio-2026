@@ -27,16 +27,16 @@ const ProjectDetail = () => {
       {/* Carousel */}
       <div className="carousel-container">
         <div className="carousel">
-          {project.images.lenght > 1 && (<img src={ArrowLeft} className="arrows" onClick={prev}/>)}
+          {project.images.length > 1 && (<img src={ArrowLeft} className="arrows" onClick={prev}/>)}
 
           <div className="screenshot-wrapper">
             <img src={project.images[currentImg]} alt={`${project.title} ${currentImg + 1}`} className="screenshots"/>
           </div>
-          {project.images.lenght > 1 && (<img src={ArrowRight} className="arrows" onClick={next}/>)}
+          {project.images.length > 1 && (<img src={ArrowRight} className="arrows" onClick={next}/>)}
         </div>
 
         {/* Indicateurs (dots) */}
-        {project.images.lenght > 1 && (
+        {project.images.length > 1 && (
           <div className="dots">
             {project.images.map((_, i) => (
               <img
