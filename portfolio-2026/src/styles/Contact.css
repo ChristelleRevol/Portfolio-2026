@@ -167,7 +167,14 @@ textarea:focus {
   font-size: 16px;
 }
 
-@media (max-width: 1568px) {
+@media (max-width: 1950px) {
+  .container-contact {
+    background: rgb(255, 255, 255);
+    gap: 14%;
+  }
+}
+
+@media (max-width: 1550px) {
 	.container-contact {
 		flex-direction: column;
 		gap: 50px;
@@ -184,6 +191,12 @@ textarea:focus {
 	.contact-logo-container {
 		margin: 0 auto;
 	}
+
+  .contact-page-logo-container {
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+  }
 
 	.form input {
 		width: 100%;

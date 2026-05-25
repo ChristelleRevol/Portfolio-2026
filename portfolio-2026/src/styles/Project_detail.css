@@ -155,3 +155,41 @@
   filter: brightness(0) invert(1);
   transition-duration: 0.3s;
 }
+
+@media (max-width: 1400px) {
+  .project-container {
+    width: 97%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .carousel-container {
+    width: 65%;
+  }
+  .project-info {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-container {
+    width: 95%;
+  }
+  .project-info {
+    width: 60%;
+    margin-top: 20px;
+  }
+  .project-info h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-info {
+    width: 95%;
+  }
+}

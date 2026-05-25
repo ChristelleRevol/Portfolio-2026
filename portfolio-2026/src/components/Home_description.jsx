@@ -22,28 +22,30 @@ const HomeDescription = () => {
             <p className="avatar-text-lastname">Revol</p>
           </div>
 
-          <p className="avatar-text-descr"><span className="highlight">Web developper fullstack</span>, I’m passionate about using my skills <br />
-          to contribute to innovative projects that combine technology <br />
+          <p className="avatar-text-descr"><span className="highlight">Web developper fullstack</span>, I’m passionate about using my skills
+          to contribute to innovative projects that combine technology
           with a clear awareness of tomorrow’s challenges.</p>
         </div>
 
         <div className="buttons-logos">
           <div className="description-btns">
             <BtnContact />
-            <a href="/projects" className="clearindigo-btn">
+            <a href="/projects" className="home-projects-btn">
               <img src={monitorLogo} alt="projects logo" className="indigo-logo" />
               View projects
             </a>
             <CvModal />
           </div>
+
+          <img src={verticalLine} alt="separation line" className="separation-line"/>
+
           <div className="description-logos">
-            <img src={verticalLine} alt="separation line"/>
-            <a href="https://www.linkedin.com/in/christelle-revol-458923130/" target="_blank">
-              <img src={linkedinLogo} alt="linkedin logo" className="logo-color-size"/>
-            </a>
-            <a href="https://github.com/ChristelleRevol" target="_blank">
-              <img src={githubLogo} alt="github logo" className="logo-color-size"/>
-            </a>
+              <a href="https://www.linkedin.com/in/christelle-revol-458923130/" target="_blank">
+                <img src={linkedinLogo} alt="linkedin logo" className="logo-color-size"/>
+              </a>
+              <a href="https://github.com/ChristelleRevol" target="_blank">
+                <img src={githubLogo} alt="github logo" className="logo-color-size"/>
+              </a>
           </div>
         </div>
 

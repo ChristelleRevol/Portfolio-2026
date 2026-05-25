@@ -5,24 +5,27 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
+const breakpoint = 750
+
 const ParticlesBackground = ({ maskLeft = "18%", maskWidth = "64%", noMask = false, disabled = false }) => {
 	const [init, setInit] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < breakpoint)
+
+  useEffect(() => {
+    const handleResize = () => setIsSmallScreen(window.innerWidth < breakpoint);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
 	// this should be run only once per application lifetime
 	useEffect(() => {
     if (disabled) return
 		initParticlesEngine(async (engine) => {
-			// you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-			// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-			// starting from v2 you can add only the features you need reducing the bundle size
-			//await loadAll(engine);
-			//await loadFull(engine);
 			await loadSlim(engine);
-			//await loadBasic(engine);
 		}).then(() => {
 			setInit(true);
 		});
-	}, [disabled]);
+	}, [disabled, isSmallScreen]);
 
 	const options = useMemo(
 		() => ({
@@ -95,7 +98,7 @@ const ParticlesBackground = ({ maskLeft = "18%", maskWidth = "64%", noMask = fal
 		[],
 	);
 
-  if (disabled) return null
+  if (disabled || isSmallScreen) return null
 
 	if (!init) return null; // attend que le moteur soit prêt
 
