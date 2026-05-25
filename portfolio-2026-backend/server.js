@@ -48,6 +48,6 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, "../portfolio-2026/dist")));
 
 // Renvoie index.html pour toutes les routes React (client-side routing)
-app.get("*", (req, res) => {
+app.get("/{*path}", (req, res) => {
   res.sendFile(path.join(__dirname, "../portfolio-2026/dist", "index.html"));
 });

@@ -6,6 +6,6 @@
     "start": "cd portfolio-2026-backend && npm install && node server.js"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   }
 }
