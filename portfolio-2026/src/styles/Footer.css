@@ -70,3 +70,21 @@
   padding: 5px 15px;
   border-radius: 5px;
 }
+
+@media (max-width: 800px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-name {
+    text-align: center;
+  }
+  .footer-menu {
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .footer-contact {
+    align-items: center;
+  }
+}
