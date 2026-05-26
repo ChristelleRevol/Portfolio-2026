@@ -14,6 +14,8 @@ const ProjectDetail = () => {
  const project = projectDetailsData.find((p) => p.id === id)
  const [currentImg, setCurrentImg] = useState(0)
 
+ const [openModal, setOpenModal] = useState(false);
+
  if (!project) return <p>Projet introuvable</p>
 
  const prev = () => setCurrentImg((i) => (i-1 + project.images.length) % project.images.length)
@@ -30,10 +32,25 @@ const ProjectDetail = () => {
           {project.images.length > 1 && (<img src={ArrowLeft} className="arrows" onClick={prev}/>)}
 
           <div className="screenshot-wrapper">
-            <img src={project.images[currentImg]} alt={`${project.title} ${currentImg + 1}`} className="screenshots"/>
+            <img src={project.images[currentImg]} alt={`${project.title} ${currentImg + 1}`}
+            className="screenshots" onClick={() => setOpenModal(true)}/>
           </div>
           {project.images.length > 1 && (<img src={ArrowRight} className="arrows" onClick={next}/>)}
         </div>
+
+        {openModal && (
+        <div className="modal-overlay" onClick={() => setOpenModal(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+
+            <img
+              src={project.images[currentImg]}
+              title={`${project.title} ${currentImg + 1}`}
+              className="img-viewer"
+            />
+
+          </div>
+          </div>
+        )}
 
         {/* Indicateurs (dots) */}
         {project.images.length > 1 && (
