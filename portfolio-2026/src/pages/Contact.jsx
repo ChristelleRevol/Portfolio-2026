@@ -5,7 +5,8 @@ import linkedin from "../assets/images/logos/linkedin.svg"
 import github from "../assets/images/logos/github.svg"
 
 const Contact = () => {
-  return <div class="container-contact">
+  return (
+  <div class="container-contact">
     <div class="references">
 				<div class="ref-group">
 					<h2>Email</h2>
@@ -41,6 +42,6 @@ const Contact = () => {
 
     <FormulaireContact />
   </div>
-}
+)}
 
 export default Contact

@@ -17,7 +17,12 @@ const App = () => {
   const location = useLocation();
   const isProjectDetail = useMatch("/projects/:id");
 
+  const isTouchDevice =
+    window.matchMedia("(pointer: coarse)").matches &&
+  window.matchMedia("(hover: none)").matches;
+
   const particlesConfig = (() => {
+    if (isTouchDevice) return { disabled: true };
     // Cas 3 : page dynamique → aucune particule
     if (isProjectDetail) return { noMask: true };
 
