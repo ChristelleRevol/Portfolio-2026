@@ -47,6 +47,7 @@
 .avatar-text-descr {
   margin: 35px 25px;
   width: 25%;
+  text-align: justify;
 }
 
 .avatar-text-hello {
@@ -224,18 +225,26 @@
     margin-bottom: 30px;
   }
   .avatar-texts {
-    width: 70%;
+    width: 50%;
     display: block;
+    display: flex;
+    flex-direction: column;
   }
   .avatar-text-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin: 10px 0;
+    width: 175px;
+  }
+  .avatar-text-hello {
+    text-align: right;
+    align-self: stretch;
   }
   .avatar-text-descr {
-    margin: 0 auto 10px auto;
-    width: 35%;
-    text-align: center;
+    margin-top: 10px;
+    width: 50%;
+    align-self: flex-end;
+    margin-right: 0;
   }
 }

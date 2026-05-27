@@ -51,7 +51,7 @@ const FormulaireContact = () => {
   return (
     <div>
       <div class="form">
-        <h2 class="form-text">Contactez-moi</h2>
+        <h2 class="form-text">Contact me</h2>
         <form onSubmit={handleSubmit}>
           <div class="form-inside">
             <div class="inputs-group">
@@ -86,7 +86,7 @@ const FormulaireContact = () => {
               onClick={handleClick}
               className={!clicked ? "submit-btn" : "btn-clicked"}
             >
-              Envoyer
+              Send
             </button>
           </div>
 
