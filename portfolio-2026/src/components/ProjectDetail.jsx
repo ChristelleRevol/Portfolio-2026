@@ -7,6 +7,7 @@ import Dot from "../assets/images/logos/dot.svg"
 import ArrowLeft from "../assets/images/logos/caret-left.svg"
 import ArrowRight from "../assets/images/logos/caret-right.svg"
 import MonitorLogo from "../assets/images/logos/monitor.svg"
+import Back from "../assets/images/logos/arrow-left.svg"
 
 const ProjectDetail = () => {
  const { id } = useParams()
@@ -88,8 +89,8 @@ const ProjectDetail = () => {
       </div>
     </div>
     <button className="btn-back-projects" onClick={() => navigate("/projects")}>
-      <img src={MonitorLogo} alt="" />
-      Go back to Projects
+      <img src={Back} alt="" />
+      Back
       </button>
   </div>
  )
