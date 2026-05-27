@@ -76,7 +76,7 @@
   z-index: 3;
   display: flex;
   justify-content: space-between;
-  width: 35%;
+  /* width: 35%; */
   margin-bottom: 50px;
 }
 
@@ -170,6 +170,16 @@
   transition-duration: 0.3s;
 }
 
+.separation-line {
+  margin: 0 30px;
+}
+
+/* @media (max-width: 2600px) {
+  .buttons-logos {
+    width: 30%;
+  }
+}
+
 @media (max-width: 1840px) {
   .buttons-logos {
     width: 38%;
@@ -180,7 +190,7 @@
   .buttons-logos {
     width: 43%;
   }
-}
+} */
 
 @media (max-width: 1680px) {
   .buttons-logos {
