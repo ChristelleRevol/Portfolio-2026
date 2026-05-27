@@ -10,10 +10,16 @@ import BtnContact from "../components/Btn_contact.jsx"
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
 
   const toggleFilter = (filter) => {
-    setActiveFilter(prev => prev === filter ? "" : filter
-    )
+    setIsLoading(true)
+    const delay = Math.random() * 1000 + 1000 // entre 1000 et 2000ms
+
+    setTimeout(() => {
+      setActiveFilter(prev => prev === filter ? "" : filter)
+      setIsLoading(false)
+    }, delay)
   }
 
   const filteredProjects = activeFilter === ""
@@ -44,13 +50,19 @@ const Projects = () => {
         </div>
 
         <div className="grid-container">
-          <div className={`grid grid--${activeFilter || "default"}`}>
+          {isLoading ? (<div className="loading-overlay">
+              <div className="loader">
+              </div>
+            </div>) : (
+              <div className={`grid grid--${activeFilter || "default"}`}>
             {filteredProjects.map((project) => (
               <Link to={`/projects/${project.id}`} key={project.id} className={`image-card ${project.className}`}>
                 <ImageCards key={project.className} {...project}/>
               </Link>
             ))}
           </div>
+            )}
+
         </div>
       </div>
       <div className="contact-project-page">
