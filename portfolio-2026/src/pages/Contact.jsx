@@ -16,7 +16,7 @@ const Contact = () => {
 					{/* <p>christellerevol.works@gmail.com</p> */}
 				</div>
 				<div class="ref-group">
-					<h2>Réseaux Sociaux</h2>
+					<h2>Social medias</h2>
 					<div className="contact-page-logo-container">
 						<a
 							href="https://fr.linkedin.com/in/christelle-revol-458923130"
