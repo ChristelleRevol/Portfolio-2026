@@ -139,76 +139,79 @@ useEffect(() => {
         </div>
 
         <div className="white-logo-group">
-          <div className="logo-track">
-            <img src={ruby} alt="ruby logo" className="white-logo"/>
-            <img src={rails} alt="rails logo" className="white-logo"/>
-            <img src={javascript} alt="javascript logo" className="white-logo"/>
-            <img src={react} alt="react logo" className="white-logo"/>
-            <img src={angular} alt="angular logo" className="white-logo"/>
-            <img src={nodejs} alt="nodejs logo" className="white-logo"/>
-            <img src={stimulus} alt="stimulus logo" className="white-logo"/>
-            <img src={typescript} alt="typescript logo" className="white-logo"/>
-            <img src={html} alt="html logo" className="white-logo"/>
-            <img src={css} alt="css logo" className="white-logo"/>
-            <img src={bootstrap} alt="bootstrap logo" className="white-logo"/>
-            <img src={postgresql} alt="postgresql logo" className="white-logo"/>
-            <img src={sql} alt="sql logo" className="white-logo"/>
-            <img src={github} alt="github logo" className="white-logo"/>
-            <img src={figma} alt="figma logo" className="white-logo"/>
-            <img src={photoshop} alt="photoshop logo" className="white-logo"/>
-            <img src={illustrator} alt="illustrator logo" className="white-logo"/>
-            <img src={wordpress} alt="wordpress logo" className="white-logo"/>
-            <img src={ubuntu} alt="ubuntu logo" className="white-logo"/>
-            <img src={heroku} alt="heroku logo" className="white-logo"/>
+          <div className="logo-track-wrapper">
+            <div className="logo-track">
+              <img src={ruby} alt="ruby logo" className="white-logo"/>
+              <img src={rails} alt="rails logo" className="white-logo"/>
+              <img src={javascript} alt="javascript logo" className="white-logo"/>
+              <img src={react} alt="react logo" className="white-logo"/>
+              <img src={angular} alt="angular logo" className="white-logo"/>
+              <img src={nodejs} alt="nodejs logo" className="white-logo"/>
+              <img src={stimulus} alt="stimulus logo" className="white-logo"/>
+              <img src={typescript} alt="typescript logo" className="white-logo"/>
+              <img src={html} alt="html logo" className="white-logo"/>
+              <img src={css} alt="css logo" className="white-logo"/>
+              <img src={bootstrap} alt="bootstrap logo" className="white-logo"/>
+              <img src={postgresql} alt="postgresql logo" className="white-logo"/>
+              <img src={sql} alt="sql logo" className="white-logo"/>
+              <img src={github} alt="github logo" className="white-logo"/>
+              <img src={figma} alt="figma logo" className="white-logo"/>
+              <img src={photoshop} alt="photoshop logo" className="white-logo"/>
+              <img src={illustrator} alt="illustrator logo" className="white-logo"/>
+              <img src={wordpress} alt="wordpress logo" className="white-logo"/>
+              <img src={ubuntu} alt="ubuntu logo" className="white-logo"/>
+              <img src={heroku} alt="heroku logo" className="white-logo"/>
+            </div>
+
+            {/* DUPLICATION */}
+            <div className="logo-track">
+              <img src={ruby} alt="ruby logo" className="white-logo"/>
+              <img src={rails} alt="rails logo" className="white-logo"/>
+              <img src={javascript} alt="javascript logo" className="white-logo"/>
+              <img src={react} alt="react logo" className="white-logo"/>
+              <img src={angular} alt="angular logo" className="white-logo"/>
+              <img src={nodejs} alt="nodejs logo" className="white-logo"/>
+              <img src={stimulus} alt="stimulus logo" className="white-logo"/>
+              <img src={typescript} alt="typescript logo" className="white-logo"/>
+              <img src={html} alt="html logo" className="white-logo"/>
+              <img src={css} alt="css logo" className="white-logo"/>
+              <img src={bootstrap} alt="bootstrap logo" className="white-logo"/>
+              <img src={postgresql} alt="postgresql logo" className="white-logo"/>
+              <img src={sql} alt="sql logo" className="white-logo"/>
+              <img src={github} alt="github logo" className="white-logo"/>
+              <img src={figma} alt="figma logo" className="white-logo"/>
+              <img src={photoshop} alt="photoshop logo" className="white-logo"/>
+              <img src={illustrator} alt="illustrator logo" className="white-logo"/>
+              <img src={wordpress} alt="wordpress logo" className="white-logo"/>
+              <img src={ubuntu} alt="ubuntu logo" className="white-logo"/>
+              <img src={heroku} alt="heroku logo" className="white-logo"/>
+            </div>
+
+            {/* DUPLICATION */}
+            {/* <div className="logo-track">
+              <img src={ruby} alt="ruby logo" className="white-logo"/>
+              <img src={rails} alt="rails logo" className="white-logo"/>
+              <img src={javascript} alt="javascript logo" className="white-logo"/>
+              <img src={react} alt="react logo" className="white-logo"/>
+              <img src={angular} alt="angular logo" className="white-logo"/>
+              <img src={nodejs} alt="nodejs logo" className="white-logo"/>
+              <img src={stimulus} alt="stimulus logo" className="white-logo"/>
+              <img src={typescript} alt="typescript logo" className="white-logo"/>
+              <img src={html} alt="html logo" className="white-logo"/>
+              <img src={css} alt="css logo" className="white-logo"/>
+              <img src={bootstrap} alt="bootstrap logo" className="white-logo"/>
+              <img src={postgresql} alt="postgresql logo" className="white-logo"/>
+              <img src={sql} alt="sql logo" className="white-logo"/>
+              <img src={github} alt="github logo" className="white-logo"/>
+              <img src={figma} alt="figma logo" className="white-logo"/>
+              <img src={photoshop} alt="photoshop logo" className="white-logo"/>
+              <img src={illustrator} alt="illustrator logo" className="white-logo"/>
+              <img src={wordpress} alt="wordpress logo" className="white-logo"/>
+              <img src={ubuntu} alt="ubuntu logo" className="white-logo"/>
+              <img src={heroku} alt="heroku logo" className="white-logo"/>
+            </div> */}
           </div>
 
-          {/* DUPLICATION */}
-          <div className="logo-track">
-            <img src={ruby} alt="ruby logo" className="white-logo"/>
-            <img src={rails} alt="rails logo" className="white-logo"/>
-            <img src={javascript} alt="javascript logo" className="white-logo"/>
-            <img src={react} alt="react logo" className="white-logo"/>
-            <img src={angular} alt="angular logo" className="white-logo"/>
-            <img src={nodejs} alt="nodejs logo" className="white-logo"/>
-            <img src={stimulus} alt="stimulus logo" className="white-logo"/>
-            <img src={typescript} alt="typescript logo" className="white-logo"/>
-            <img src={html} alt="html logo" className="white-logo"/>
-            <img src={css} alt="css logo" className="white-logo"/>
-            <img src={bootstrap} alt="bootstrap logo" className="white-logo"/>
-            <img src={postgresql} alt="postgresql logo" className="white-logo"/>
-            <img src={sql} alt="sql logo" className="white-logo"/>
-            <img src={github} alt="github logo" className="white-logo"/>
-            <img src={figma} alt="figma logo" className="white-logo"/>
-            <img src={photoshop} alt="photoshop logo" className="white-logo"/>
-            <img src={illustrator} alt="illustrator logo" className="white-logo"/>
-            <img src={wordpress} alt="wordpress logo" className="white-logo"/>
-            <img src={ubuntu} alt="ubuntu logo" className="white-logo"/>
-            <img src={heroku} alt="heroku logo" className="white-logo"/>
-          </div>
-
-          {/* DUPLICATION */}
-          <div className="logo-track">
-            <img src={ruby} alt="ruby logo" className="white-logo"/>
-            <img src={rails} alt="rails logo" className="white-logo"/>
-            <img src={javascript} alt="javascript logo" className="white-logo"/>
-            <img src={react} alt="react logo" className="white-logo"/>
-            <img src={angular} alt="angular logo" className="white-logo"/>
-            <img src={nodejs} alt="nodejs logo" className="white-logo"/>
-            <img src={stimulus} alt="stimulus logo" className="white-logo"/>
-            <img src={typescript} alt="typescript logo" className="white-logo"/>
-            <img src={html} alt="html logo" className="white-logo"/>
-            <img src={css} alt="css logo" className="white-logo"/>
-            <img src={bootstrap} alt="bootstrap logo" className="white-logo"/>
-            <img src={postgresql} alt="postgresql logo" className="white-logo"/>
-            <img src={sql} alt="sql logo" className="white-logo"/>
-            <img src={github} alt="github logo" className="white-logo"/>
-            <img src={figma} alt="figma logo" className="white-logo"/>
-            <img src={photoshop} alt="photoshop logo" className="white-logo"/>
-            <img src={illustrator} alt="illustrator logo" className="white-logo"/>
-            <img src={wordpress} alt="wordpress logo" className="white-logo"/>
-            <img src={ubuntu} alt="ubuntu logo" className="white-logo"/>
-            <img src={heroku} alt="heroku logo" className="white-logo"/>
-          </div>
         </div>
       </div>
     </div>
