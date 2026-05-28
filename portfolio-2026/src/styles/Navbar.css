@@ -74,7 +74,7 @@
 .mobile-menu {
   position: absolute;
   top: 80px;
-  right: 0;
+  right: 10px;
   width: 180px;
   padding: 0;
   display: flex;

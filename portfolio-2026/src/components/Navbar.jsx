@@ -24,7 +24,7 @@ const Navbar = () => {
   <header className="nbar">
     <Link to="/" className="nbar-name">Christelle Revol</Link>
 
-    {/* <p>{width}</p> */}
+    <p>{width}</p>
 
     {isMobile ? (
         <>
