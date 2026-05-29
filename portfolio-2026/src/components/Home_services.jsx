@@ -1,5 +1,5 @@
 import "../styles/Home_services.css"
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import code from "../assets/images/logos/code.svg"
 import stack from "../assets/images/logos/stack.svg"
 import palette from "../assets/images/logos/palette.svg"
@@ -31,34 +31,87 @@ import banner from "../assets/images/SVG/Services_banner.svg"
 const HomeServices = () => {
   const bannerRef = useRef(null);
 
-useEffect(() => {
-  const banner = bannerRef.current;
-  if (!banner) return;
+  const card1Ref = useRef(null)
+  const card2Ref = useRef(null)
+  const card3Ref = useRef(null)
 
-  const startScroll = window.scrollY;
+  const [activeCard, setActiveCard] = useState(0)
 
-  // 🔥 distance exacte à parcourir pour atteindre le top
-  const startTop = banner.getBoundingClientRect().top;
+  const lastScrollY = useRef(window.scrollY)
 
-  const totalScrollNeeded = startTop;
+  //effet active card
+  useEffect(() => {
+    const cards = [
+      card1Ref.current,
+      card2Ref.current,
+      card3Ref.current
+    ]
 
-  const handleScroll = () => {
-    const currentScroll = window.scrollY;
+    const handleScrollOrange = () => {
+      const currentScrollY = window.scrollY
 
-    const delta = currentScroll - startScroll;
+      const scrollingDown = currentScrollY > lastScrollY.current
 
-    const progress = Math.min(Math.max(delta / totalScrollNeeded, 0), 1);
+      lastScrollY.current = currentScrollY
 
-    const maxTranslate = banner.offsetWidth - window.innerWidth;
+      const triggerLine = scrollingDown ? window.innerHeight * 0.4 : window.innerHeight * 0.6
 
-    banner.style.transform = `translateX(-${progress * maxTranslate}px)`;
-  };
+      let closestCard = 0
+      let closestDistance = Infinity
 
-  window.addEventListener("scroll", handleScroll);
-  handleScroll();
+      cards.forEach((card, index) => {
+        if (!card) return
 
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+        const rect = card.getBoundingClientRect()
+
+        const refPoint = scrollingDown ? rect.top : rect.bottom
+
+        const distance = Math.abs(refPoint - triggerLine)
+
+        if (distance < closestDistance) {
+          closestDistance = distance
+          closestCard = index
+        }
+      })
+      if (closestCard !== activeCard) {
+        setActiveCard(closestCard)
+      }
+    }
+    window.addEventListener("scroll", handleScrollOrange)
+    handleScrollOrange()
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollOrange)
+    }
+  }, [activeCard])
+
+  // effet transformX
+  useEffect(() => {
+    const banner = bannerRef.current;
+    if (!banner) return;
+
+    const startScroll = window.scrollY;
+
+    // distance exacte à parcourir pour atteindre le top
+    const totalScrollNeeded = banner.getBoundingClientRect().top;
+
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      const delta = currentScroll - startScroll;
+
+      const progress = Math.min(Math.max(delta / totalScrollNeeded, 0), 1);
+
+      const maxTranslate = banner.offsetWidth - window.innerWidth;
+
+      banner.style.transform = `translateX(-${progress * maxTranslate}px)`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="services-container">
@@ -70,8 +123,12 @@ useEffect(() => {
         <h1 className="orange-text-clear">My services</h1>
 
         <div className="cards-group">
-          <div className="card">
-            <div className="card-title">
+          <div ref={card1Ref}
+          className={ window.innerWidth <= 1050 ?
+            `card ${activeCard === 0 ? "orange-effect" : ""}`
+          : "card"}>
+            <div className={ window.innerWidth <= 1050 ?
+            `card-title ${activeCard === 0 ? "orange-text-logo" : ""}` : "card-title"}>
               <img src={code} alt="code logo" className="card-logo"/>
               <h2 className="indigo-text">Development</h2>
               <img src={code} alt="code logo" className="hidden"/>
@@ -87,10 +144,13 @@ useEffect(() => {
               </ul>
           </div>
 
-          <div className="card-orange">
-            <div className="card-title">
-              <img src={stack} alt="code logo" class="card-logo-orange"/>
-              <h2 className="orange-text-clear">Stack</h2>
+          <div ref={card2Ref} className={ window.innerWidth <= 1050 ?
+            `card ${activeCard === 1 ? "orange-effect" : ""}`
+          : "card-orange"}>
+            <div className={ window.innerWidth <= 1050 ?
+            `card-title ${activeCard === 1 ? "orange-text-logo" : ""}` : "card-title"}>
+              <img src={stack} alt="code logo" class="card-logo"/>
+              <h2 className="indigo-text">Stack</h2>
               <img src={stack} alt="code logo" className="hidden"/>
             </div>
 
@@ -111,8 +171,11 @@ useEffect(() => {
           </div>
 
           <div className="card3-and-btn">
-            <div className="card">
-              <div className="card-title">
+            <div ref={card3Ref} className={ window.innerWidth <= 1050 ?
+            `card ${activeCard === 2 ? "orange-effect" : ""}`
+          : "card"}>
+              <div className={ window.innerWidth <= 1050 ?
+            `card-title ${activeCard === 2 ? "orange-text-logo" : ""}` : "card-title"}>
                 <img src={palette} alt="code logo" className="card-logo"/>
                 <h2 className="indigo-text">UI / UX</h2>
                 <img src={palette} alt="code logo" className="hidden"/>

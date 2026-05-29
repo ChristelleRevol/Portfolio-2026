@@ -71,6 +71,23 @@
   border-radius: 10px;
 }
 
+.orange-text-logo {
+  filter: brightness(0) saturate(100%) invert(63%) sepia(9%) saturate(3663%) hue-rotate(331deg) brightness(101%) contrast(101%);
+  color: var(--text-clearorange);
+}
+
+.orange-effect {
+  box-shadow: 0 0 15px var(--text-clearorange);
+}
+
+.card, .orange-effect {
+  transition: all 0.3s ease;
+}
+
+.card-title, .orange-text-logo {
+  transition-duration: 0.3s ease;
+}
+
 .card-orange {
   display: flex;
   flex-direction: column;
@@ -82,14 +99,9 @@
   width: 330px;
   border-radius: 10px;
   box-shadow: 0 0 15px var(--text-clearorange);
-
-  color: white;
-  font-family: "Manrope", sans-serif;
-  font-size: 14px;
-  line-height: 200%;
 }
 
-.card li {
+.card, .card-orange li {
   color: white;
   font-family: "Manrope", sans-serif;
   font-size: 14px;
@@ -221,9 +233,9 @@
     justify-content: center;
     margin-top: 30px;
   }
-  .card {
+  /* .card {
     max-height: 270px;
-  }
+  } */
   .card3-and-btn {
     height: 300px;
   }
