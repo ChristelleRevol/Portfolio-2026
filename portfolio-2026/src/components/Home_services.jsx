@@ -148,7 +148,7 @@ const HomeServices = () => {
             `card ${activeCard === 1 ? "orange-effect" : ""}`
           : "card-orange"}>
             <div className={ window.innerWidth <= 1050 ?
-            `card-title ${activeCard === 1 ? "orange-text-logo" : ""}` : "card-title"}>
+            `card-title ${activeCard === 1 ? "orange-text-logo" : ""}` : "card-title orange-text-logo"}>
               <img src={stack} alt="code logo" class="card-logo"/>
               <h2 className="indigo-text">Stack</h2>
               <img src={stack} alt="code logo" className="hidden"/>
