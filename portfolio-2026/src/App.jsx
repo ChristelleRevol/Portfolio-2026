@@ -5,17 +5,19 @@ import Home from './pages/Home'
 import Projects from './pages/Projects';
 import ProjectDetail from "./components/ProjectDetail.jsx"
 import Contact from './pages/Contact'
+import PetSitting from './pages/PetSitting.jsx'
 import ParticlesBackground from './components/ParticlesBackground';
 
 const PARTICLES_CONFIG = {
   "/":          { maskLeft: "18%", maskWidth: "64%" },      // masque standard
   "/projects":  { maskLeft: "15%", maskWidth: "70%" },      // masque plus large
-  "/contact":   { maskLeft: "25%", maskWidth: "50%" }
+  "/contact":   { maskLeft: "25%", maskWidth: "50%" },
 };
 
 const App = () => {
   const location = useLocation();
   const isProjectDetail = useMatch("/projects/:id");
+  const isPetSitting = useMatch("/pet-sitting")
 
   const isTouchDevice =
     window.matchMedia("(pointer: coarse)").matches &&
@@ -32,10 +34,8 @@ const App = () => {
 
   return (
     <div className='app'>
-
-      <ParticlesBackground {...particlesConfig}/>
-
-        <Navbar />
+      {!isPetSitting && <ParticlesBackground {...particlesConfig}/>}
+      {!isPetSitting && <Navbar />}
 
         <main className="content">
         <Routes>
@@ -43,10 +43,11 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/pet-sitting" element={<PetSitting/>}/>
         </Routes>
         </main>
 
-        <Footer />
+        {!isPetSitting && <Footer />}
 
     </div>
   )

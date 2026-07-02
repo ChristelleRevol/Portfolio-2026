@@ -1,0 +1,75 @@
+.pet-accueil {
+  width: 75%;
+  padding: 40px 90px;
+  background-color: #0E6749;
+  border-radius: 15px;
+  margin: auto;
+  position: relative;
+}
+
+.pet-accueil h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: #FF851B;
+}
+
+.pet-accueil-descr {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  width: 50%;
+  margin: 40px 0;
+}
+
+.accueil-cards {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.accueil-card {
+  font-family: "Montserrat", sans-serif;
+  width: 260px;
+  height: 230px;
+  padding: 15px;
+  background-color: #14553F;
+  border-radius: 15px;
+  z-index: 2;
+  font-size: 16px;
+  color: white;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+.accueil-card h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FF751B;
+  margin: 10px 0;
+}
+
+.accueil-card img{
+  width: 40px;
+  filter: brightness(0) saturate(100%) invert(46%) sepia(57%) saturate(1077%) hue-rotate(346deg) brightness(106%) contrast(101%);
+}
+
+.pet-orange{
+  background-color: #E2791E;
+  color: #4D2300;
+}
+
+.pet-orange img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(339deg) brightness(102%) contrast(101%);
+}
+
+.pet-orange h2 {
+  color: white;
+}
+
+.Neko-Lena {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 700px;
+}

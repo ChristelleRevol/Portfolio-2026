@@ -1,0 +1,44 @@
+.pet-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 4%;
+  font-family: "Roboto", sans-serif;
+}
+
+.pet-navbar a {
+  text-decoration: none;
+}
+
+.pet-navbar p {
+  font-size: 30px;
+  font-weight: 600;
+  color: #FF751B;
+}
+
+.pet-navbar span {
+  color: #0E6749;
+}
+
+.pet-links {
+  display: flex;
+  gap: 30px;
+}
+
+.pet-links a {
+  color: #052719;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pet-btn-contact {
+  background-color: #D56300;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.pet-btn-contact a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
