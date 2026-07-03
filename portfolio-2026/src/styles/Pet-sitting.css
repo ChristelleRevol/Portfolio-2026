@@ -1,0 +1,10 @@
+.pet-body {
+  position: relative;
+}
+
+.pet-bg-paws {
+  position: absolute;
+  width: 100%;
+  top: 530px;
+  z-index: -1;
+}
