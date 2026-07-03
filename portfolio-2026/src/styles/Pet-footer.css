@@ -1,0 +1,47 @@
+.pet-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 10%;
+  background-color: #0E6749;
+  font-family: "Roboto", sans-serif;
+}
+
+.pet-footer-name {
+  color: #00BD70;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.pet-footer-name-orange {
+  color: #FF8E3E;
+}
+
+.pet-footer-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pet-footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.pet-footer-contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.pet-footer-logo {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.pet-footer-logo-green {
+  width: 43px;
+  margin-right: 20px;
+  filter: brightness(0) saturate(100%) invert(57%) sepia(65%) saturate(3724%) hue-rotate(122deg) brightness(95%) contrast(102%);
+}

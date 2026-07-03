@@ -1,0 +1,42 @@
+#a-propos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: "Montserrat", sans-serif;
+  margin: 50px 0;
+}
+
+.pet-propos-text {
+  width: 30%;
+  font-size: 14px;
+}
+
+.pet-propos-text h1 {
+  font-family: "Cause", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #E25E00;
+  text-align: center;
+}
+
+.pet-propos-text p {
+  margin: 20px 0 10px 0;
+}
+
+.pet-propos-li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.pet-propos-li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.Heidi-Valko {
+  width: 30%;
+  border-radius: 15px;
+}

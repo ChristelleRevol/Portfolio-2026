@@ -7,7 +7,7 @@ import NekoEtLena from "../assets/images/Pets/Photomontage_Accueil.png"
 
 const PetAccueil = () => {
   return (
-    <div className="pet-accueil">
+    <div id="accueil">
       <h1>Pet-sitting</h1>
       <p className="pet-accueil-descr">
         Bienvenue sur ma page! <br />
