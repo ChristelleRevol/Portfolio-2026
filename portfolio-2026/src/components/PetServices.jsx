@@ -10,7 +10,7 @@ const PetServices = () => {
           <p className="pet-services-text">Visite une à plusieurs fois par jour, selon la localisation du domicile, pour nourrir, nettoyer la litière, jouer, s'assurer que l'animal aille bien.</p>
           <div>
             <hr className="pet-divider" />
-            <p className="pet-tarifs">00 / heure</p>
+            <p className="pet-tarifs">10€ / heure</p>
           </div>
         </div>
 
@@ -20,7 +20,7 @@ const PetServices = () => {
           Tout types de chien acceptés en dehors des catégorisés</p>
           <div>
             <hr className="pet-divider" />
-            <p className="pet-tarifs">00 / heure</p>
+            <p className="pet-tarifs">10€ / heure</p>
           </div>
         </div>
 
@@ -30,7 +30,7 @@ const PetServices = () => {
           Travaillant à domicile, je serai toujours présente pour veiller sur votre fidèle compagnon</p>
           <div>
             <hr className="pet-divider" />
-            <p className="pet-tarifs">00 / heure</p>
+            <p className="pet-tarifs">18€ / jour</p>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const PetServices = () => {
           Période maximale de garde à domicile: 3 jours</p>
           <div>
             <hr className="pet-divider" />
-            <p className="pet-tarifs">00 / heure</p>
+            <p className="pet-tarifs">21€ / jour</p>
           </div>
         </div>
       </div>
