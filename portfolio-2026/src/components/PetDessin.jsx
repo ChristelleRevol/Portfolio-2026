@@ -5,7 +5,7 @@ import Koka from "../assets/images/Pets/Koka_dessin_ps.jpg"
 import SpikePhoto from "../assets/images/Pets/Spike_et_dessin_ps.jpg"
 import KokaPhoto from "../assets/images/Pets/Koka_et_dessin_1_ps.jpg"
 import HappyPhoto from "../assets/images/Pets/Happy_et_dessin_2_ps.jpg"
-import Wave2 from "../assets/images/SVG/wave_2.svg"
+import Wave2 from "../assets/images/SVG/wave6.svg"
 
 const PetDessin = () => {
   return (

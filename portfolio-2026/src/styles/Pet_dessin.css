@@ -1,5 +1,6 @@
 .pet-dessin {
   margin: 50px 0;
+  position: relative;
 }
 
 .pet-dessin h1 {
@@ -70,4 +71,37 @@
 .dessin-restants span {
   color: #E25E00;
   font-size: 30px
+}
+
+.dessin-et-animaux {
+  margin: 40px 0;
+  display: grid;
+}
+
+.dessin-groupe-photos,
+.dessin-wave {
+  grid-area: 1 / 1;
+}
+
+.dessin-groupe-photos {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+  z-index: 2;
+  align-self: end;
+}
+
+.dessin-groupe-photos img {
+  width: 400px;
+  height: fit-content;
+  border-radius: 15px;
+}
+
+.dessin-wave {
+  align-self: end;
+  width: 100%;
+  z-index: 1;
+  fill: linear-gradient(180deg,rgba(137, 231, 163, 1) 15%, rgba(55, 188, 140, 1) 100%);
 }
