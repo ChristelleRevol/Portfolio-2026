@@ -1,0 +1,35 @@
+.pet-avis-div {
+  margin: 40px auto 0 auto;
+}
+
+.pet-avis-line {
+  width: 100%;
+}
+
+.pet-avis-list {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.pet-avis {
+  width: 20%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #044730;
+  text-align: center;
+}
+
+.pet-avis h3 {
+  color: #E25E00;
+  font-family: "Cause", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pet-avis-animal {
+  color: #096E4C;
+  font-weight: 600;
+  margin-bottom: 10px;
+}

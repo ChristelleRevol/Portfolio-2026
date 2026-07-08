@@ -4,7 +4,8 @@
 
 .pet-bg-paws {
   position: absolute;
-  width: 95%;
-  top: 450px;
+  left: 8%;
+  width: 84%;
+  top: 550px;
   z-index: -1;
 }

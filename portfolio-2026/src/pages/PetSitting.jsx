@@ -5,8 +5,9 @@ import PetServices from "../components/PetServices"
 import PetFooter from "../components/PetFooter"
 import PetDessin from "../components/PetDessin"
 import PetContact from "../components/PetContact"
+import PetAvis from "../components/PetAvis"
 
-import PawsBg from "../assets/images/Pets/Paws.png"
+import PawsBg from "../assets/images/Pets/Paws2.svg"
 
 import "../styles/Pet-sitting.css"
 
@@ -21,6 +22,7 @@ const PetSitting = () => {
         <PetServices />
         <PetDessin />
         <PetContact />
+        <PetAvis />
       </div>
       <PetFooter/>
     </div>
