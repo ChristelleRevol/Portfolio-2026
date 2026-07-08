@@ -1,0 +1,99 @@
+#pet-contact {
+  width: 50%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  align-items: start;
+}
+
+/* PHOTO */
+
+.Koka-and-you {
+  grid-column: 1;
+  grid-row: 1 / 3;
+
+  width: 100%;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+/* COLONNE DE DROITE */
+
+.petcontact-right {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: flex-end;
+  margin-bottom: 50px;
+}
+
+#pet-contact h1 {
+  color: #E25E00;
+  font-family: "Cause", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* RECTANGLE + TEXTE */
+
+.petcontact-rectangle-div {
+  grid-column: 1 / 3;
+  grid-row: 2;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.petcontact-rectangle,
+.petcontact-text-rectangle {
+  grid-area: 1 / 1;
+}
+
+.petcontact-rectangle {
+  width: 100%;
+  z-index: 1;
+
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.petcontact-text-rectangle {
+  grid-column: 2;
+  grid-row: 1;
+
+  justify-self: center;
+  align-self: center;
+
+  width: 80%;
+  z-index: 2;
+}
+
+/* TEXTE */
+
+.petcontact-text-rectangle p {
+  color: #044730;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.petcontact-infos-list {
+  margin-top: 15px;
+}
+
+.petcontact-infos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.petcontact-infos img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.petcontact-logo-white {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7473%) hue-rotate(42deg) brightness(114%) contrast(101%);
+}

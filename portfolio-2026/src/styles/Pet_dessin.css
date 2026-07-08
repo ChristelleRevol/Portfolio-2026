@@ -1,9 +1,9 @@
-.pet-dessin {
+#portraits {
   margin: 50px 0;
   position: relative;
 }
 
-.pet-dessin h1 {
+#portraits h1 {
   color: #E25E00;
   font-family: "Cause", sans-serif;
   font-size: 40px;

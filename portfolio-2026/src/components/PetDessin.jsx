@@ -9,7 +9,7 @@ import Wave2 from "../assets/images/SVG/wave6.svg"
 
 const PetDessin = () => {
   return (
-    <div className="pet-dessin">
+    <div id="portraits">
       <h1>Pet-sitting et dessin</h1>
       <div className="dessin-infos">
         <div className="dessin-crayon">
