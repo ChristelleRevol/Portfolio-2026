@@ -42,3 +42,96 @@
   font-size: 18px;
   font-weight: 600;
 }
+
+/*____________
+     Mobile   |
+____________*/
+
+.petmobile-menu {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  width: 180px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background: #27986f;
+  border-radius: 5px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 93, 57, 0.5);;
+
+  /* État fermé */
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(.8, 0, .33, 1),
+              opacity 0.3s ease;
+}
+
+.petmobile-menu.open {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.petmobile-menu a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0F503A;
+  padding: 14px 0;
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 65, 36, 0.1);
+  transition: color 300ms ease;
+}
+
+.petmobile-menu a:last-child { border-bottom: none; }
+
+.petmobile-menu a:hover { color: white; }
+
+.petbtn-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  z-index: 200;
+}
+
+.petline {
+  width: 30px;
+  height: 2px;
+  background: #0E6749;
+  transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.petline--1 { width: 16px; transform: rotate(0) translateY(0); }
+.petline--2 { width: 22px; }
+.petline--3 { width: 30px; transform: rotate(0) translateY(0); }
+
+.petline--1.petline-cross { width: 30px; transform: rotate(45deg) translateY(7px); }
+.petline--2.petline-fade-out { transform: translateX(30px); opacity: 0; }
+.petline--3.petline-cross { width: 30px; transform: rotate(-45deg) translateY(-7px); }
+
+@media (max-width: 900px) {
+  .pet-links {
+    gap: 5%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .pet-links a {
+    font-size: 14px;
+  }
+  .pet-btn-contact a {
+    font-size: 16px;
+  }
+}
