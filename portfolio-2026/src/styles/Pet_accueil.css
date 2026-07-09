@@ -73,3 +73,67 @@
   right: 20px;
   width: 700px;
 }
+
+@media (max-width: 1640px) {
+  .Neko-Lena {
+    width: 50%;
+    top: 1%;
+  }
+}
+
+@media (max-width: 1240px) {
+  .accueil-card {
+    height: auto;
+  }
+  .Neko-Lena {
+    top: 8%;
+  }
+}
+
+@media (max-width: 1050px) {
+  #accueil {
+    padding: 2% 2%;
+  }
+  #accueil h1 {
+    text-align: center;
+  }
+  .pet-accueil-descr {
+    margin: 30px auto;
+    text-align: center;
+    width: 60%;
+  }
+  .accueil-cards {
+    justify-content: center;
+  }
+  .accueil-card {
+    width: 100%;
+  }
+  .Neko-Lena {
+    position: static;
+    margin: 0 auto 0 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .accueil-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .accueil-card {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  #accueil {
+    padding: 2% 2% 45% 2%;
+  }
+  .Neko-Lena {
+    position: absolute;
+    top: 90%;
+    right: -20px;
+    width: 120%;
+    margin: 0 auto;
+  }
+}

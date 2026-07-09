@@ -9,3 +9,9 @@
   top: 550px;
   z-index: -1;
 }
+
+@media (max-width: 1700px) {
+  .pet-bg-paws {
+    opacity: 0;
+  }
+}

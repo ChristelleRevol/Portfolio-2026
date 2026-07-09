@@ -40,3 +40,33 @@
   width: 30%;
   border-radius: 15px;
 }
+
+@media (max-width: 1450px) {
+  #a-propos {
+    flex-direction: column;
+  }
+  .pet-propos-text {
+    width: 50%;
+  }
+  .Heidi-Valko {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .pet-propos-text {
+    width: 75%;
+  }
+  .Heidi-Valko {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  #a-propos {
+    gap: 5px;
+  }
+  .Heidi-Valko {
+    width: 90%;
+  }
+}
