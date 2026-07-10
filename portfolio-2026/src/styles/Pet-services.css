@@ -82,3 +82,34 @@
   background-color: #D56300;
   border-radius: 15px;
 }
+
+@media (max-width: 1400px) {
+  #services {
+    padding: 2%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pet-services-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pet-services-card {
+    width: 60%;
+    height: auto;
+    text-align: center;
+  }
+  .pet-services-text {
+    margin: 15px 0;
+  }
+  .pet-services-contact {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .pet-services-card {
+    width: 85%;
+  }
+}
