@@ -38,6 +38,9 @@
   font-size: 12px;
   width: 100px;
   margin: 15px 0 0 15px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
 }
 
 .dessin-tarifs span {
@@ -79,7 +82,7 @@
 }
 
 .dessin-groupe-photos,
-.dessin-wave {
+.dessin-wave, .pet-slide-btn-group {
   grid-area: 1 / 1;
 }
 
@@ -104,4 +107,122 @@
   width: 100%;
   z-index: 1;
   fill: linear-gradient(180deg,rgba(137, 231, 163, 1) 15%, rgba(55, 188, 140, 1) 100%);
+}
+
+.pet-slide-btn-group {
+  display: none;
+}
+
+.slider-btn {
+  display: none;
+}
+
+.pet-dessin-arrow {
+  filter: brightness(0) saturate(100%) invert(21%) sepia(83%) saturate(393%) hue-rotate(108deg) brightness(98%) contrast(95%);
+}
+
+@media (max-width: 1650px) {
+  .dessin-groupe-photos {
+    width: 90%;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .dessin-crayon {
+    width: 30%;
+  }
+  .dessin-aquarelle {
+    width: 30%;
+  }
+  .dessin-infos img {
+    width: 100%;
+  }
+}
+
+/* CAROUSEL */
+
+@media (max-width:1350px){
+
+  .dessin-groupe-photos{
+
+    width:100%;
+    margin:0;
+
+    justify-content:flex-start;
+    gap:20px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+
+    padding-inline:80px;
+
+    scrollbar-width:none;
+  }
+
+  .dessin-groupe-photos::-webkit-scrollbar{
+    display:none;
+  }
+
+  .pet-slide-btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    z-index:5;
+  }
+
+  .slider-btn{
+
+    display: flex;
+
+    /* top:50%;
+    transform:translateY(-50%); */
+
+    width:48px;
+    height:48px;
+
+    border:none;
+    border-radius:50%;
+
+    background: #8BE8A4;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.459);
+    cursor:pointer;
+
+    justify-content:center;
+    align-items:center;
+  }
+
+  .slider-btn, .left{
+    margin-left:10px;
+  }
+
+  .slider-btn, .right{
+    margin-right:10px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .dessin-infos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .dessin-text, .dessin-aquarelle,
+  .dessin-crayon {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .dessin-text, .dessin-aquarelle,
+  .dessin-crayon {
+    width: 90%;
+  }
+  .dessin-restants {
+    font-size: 16px;
+  }
 }
