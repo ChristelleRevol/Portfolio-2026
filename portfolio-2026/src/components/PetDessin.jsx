@@ -28,10 +28,19 @@ const PetDessin = () => {
   const scroll = (direction) => {
     const container = sliderRef.current;
 
-    container.scrollBy({
+    if (window.innerWidth <= 500) {
+      container.scrollBy({
       left: direction === "right" ? 420 : -420,
       behavior: "smooth",
     });
+    } else {
+      container.scrollBy({
+      left: direction === "right" ? 200 : -200,
+      behavior: "smooth",
+    });
+    }
+
+
   };
 
   return (

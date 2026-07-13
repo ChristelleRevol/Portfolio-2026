@@ -8,6 +8,8 @@
   width: 84%;
   top: 550px;
   z-index: -1;
+
+  transition: opacity 0.05s linear;
 }
 
 @media (max-width: 1700px) {

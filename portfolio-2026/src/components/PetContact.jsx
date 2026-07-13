@@ -4,20 +4,20 @@ import KokaU from "../assets/images/Pets/Koka_1_ps.jpg"
 import Rover from "../assets/images/logos/rover_logo.png"
 import Phone from "../assets/images/logos/phone.svg"
 import Envelope from "../assets/images/logos/envelope.svg"
-import Rectangle from "../assets/images/SVG/Rectangle.svg"
+// import Rectangle from "../assets/images/SVG/Rectangle.svg"
 
 const PetContact = () => {
   return (
 <div id="pet-contact">
-  <img src={KokaU} alt="Photo pet-sitter avec chat" className="Koka-and-you"/>
-
-  <div className="petcontact-right">
-    <h1>Me contacter</h1>
+    <div className="petcontact-right">
+      <h1>Me contacter</h1>
   </div>
 
+  <img src={KokaU} alt="Photo pet-sitter avec chat" className="Koka-and-you"/>
+
   <div className="petcontact-rectangle-div">
-    <img src={Rectangle} alt="" className="petcontact-rectangle"
-    />
+    {/* <img src={Rectangle} alt="" className="petcontact-rectangle"/> */}
+    <div className="petcontact-rectangle"/>
 
     <div className="petcontact-text-rectangle">
       <p>
