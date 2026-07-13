@@ -33,3 +33,44 @@
   font-weight: 600;
   margin-bottom: 10px;
 }
+
+@media (max-width: 850px) {
+  .pet-avis-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .pet-avis {
+    width: 60%;
+  }
+
+  /* conteneur "full bleed" : pleine largeur d'écran sans position */
+  .pet-avis-track-wrapper {
+    width: 100vw;
+    /* margin-left: calc(-50vw + 50%); */
+    overflow: hidden;
+  }
+
+  /* la piste contient 2 avis côte à côte, chacun prend 100vw */
+  .pet-avis-track {
+    display: flex;
+    width: 200vw;
+    transform: translateX(0);
+  }
+
+  .pet-avis-track.is-sliding {
+    transition: transform 0.6s ease;
+    transform: translateX(-100vw);
+  }
+
+  .pet-avis-track .pet-avis {
+    flex: 0 0 100vw;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  .pet-avis-text {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
