@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
 import "../styles/Pet_navbar.css"
 
-const breakpoint = 750
+import Cat from "../assets/images/SVG/cat.svg"
+import Dog from "../assets/images/SVG/dog.svg"
 
-const PetNavbar = () => {
+const breakpoint = 850
+
+const PetNavbar = ({ onClick }) => {
   const [width, setWidth] = useState(window.innerWidth);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   const isMobile = width < breakpoint
 
@@ -14,6 +18,13 @@ const PetNavbar = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
     }, []);
+
+    const handleClick = (e) => {
+    if (isMobile) {
+      setIsActive((prev) => !prev);
+    }
+    if (onClick) onClick(e);
+  };
 
   return (
     <div>
@@ -47,8 +58,11 @@ const PetNavbar = () => {
               <a href="#services">Services & Tarifs</a>
               <a href="#portraits">Portraits</a>
             </div>
-            <div className="pet-btn-contact">
-              <a href="#pet-contact">Contact</a>
+            <div className={`pet-btn-contact pet-fx-wrapper ${isActive ? "is-active" : ""}`}
+            onClick={handleClick}>
+              <img src={Cat} className="pet-fx-icon pet-fx-icon--tl" alt="" />
+              <img src={Dog} className="pet-fx-icon pet-fx-icon--br" alt="" />
+              <a href="#pet-contact" className="pet-btn-contact-a">Contact</a>
             </div>
           </div>
         )}

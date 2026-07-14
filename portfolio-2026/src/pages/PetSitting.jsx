@@ -27,13 +27,12 @@ const PetSitting = () => {
   //   };
   // }, []);
 
-
-
   return (
     <div>
       <PetNavbar />
       <div className="pet-body">
         <img src={PawsBg} alt="" className="pet-bg-paws"/>
+        <div className="pet-bg-fade-mask"></div>
         {/* <p>{windowWidth}</p> */}
         <PetAccueil />
         <PetPropos />
