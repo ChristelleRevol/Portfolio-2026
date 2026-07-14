@@ -71,17 +71,92 @@
   color: white;
 }
 
+.pet-services-contact-btn {
+  margin: 20px auto;
+  border-radius: 15px;
+  height: 45px;
+  z-index: 2; /* le bouton reste au-dessus des icônes */
+  position: static;
+}
+
 .pet-services-contact-a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  margin: 20px auto;
   font-size: 16px;
   font-weight: 600;
   color: white;
-  padding: 15px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.pet-services-contact-btn:hover {
+  background-color: #ffcb7c;
+  transition: 0.3s ease-in;
+}
+
+.pet-services-contact-btn::before {
+  content: "";
+  grid-area: 1 / 1; /* rejoint la même cellule grid que les autres enfants */
   background-color: #D56300;
   border-radius: 15px;
+  z-index: -1; /* au-dessus des icônes (-2), en dessous du texte (auto) */
+  transition: 0.3s ease-in;
 }
+
+.pet-services-contact-btn:hover::before {
+  background-color: #ffcb7c;
+}
+
+.pet-services-contact-btn:hover .pet-services-contact-a {
+  transition: 0.3s ease-in;
+  color: #D56300;
+}
+
+
+/*__________
+CONTACT BTN |
+____________*/
+
+.pet-fx-wrapper {
+  display: inline-grid; /* s'adapte à la taille du bouton, pas de position nécessaire */
+  cursor: pointer;
+}
+
+/* --- Stacking : tous les enfants superposés dans la même cellule --- */
+.pet-fx-wrapper > * {
+  grid-area: 1 / 1;
+}
+
+.pet-fx-icon {
+  z-index: -2; /* les icônes restent "sous" le bouton par défaut */
+  width: 30px;
+  filter: brightness(0) saturate(100%) invert(91%) sepia(63%) saturate(1653%) hue-rotate(305deg) brightness(106%) contrast(102%);
+  align-self: center;
+  justify-self: center;
+  opacity: 0;
+  transform: translate(0, 0) scale(0.4);
+  transition: transform 0.4s cubic-bezier(.34, 1.56, .64, 1),
+              opacity 0.3s ease;
+  pointer-events: none; /* les icônes ne doivent jamais intercepter de clic */
+}
+
+/* --- Trajectoires : haut-gauche et bas-droite --- */
+.pet-fx-icon--tl {
+  transition-delay: 0s;
+}
+.pet-fx-icon--br {
+  transition-delay: 0.05s; /* léger décalage pour un effet plus organique */
+}
+
+  .pet-fx-wrapper:hover .petservices-fx-icon--tl {
+    opacity: 1;
+    transform: translate(-70px, -25px) scale(1);
+  }
+  .pet-fx-wrapper:hover .petservices-fx-icon--br {
+    opacity: 1;
+    transform: translate(70px, 25px) scale(1);
+  }
+
 
 @media (max-width: 1400px) {
   #services {

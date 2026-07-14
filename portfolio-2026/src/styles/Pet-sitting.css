@@ -7,9 +7,21 @@
   left: 8%;
   width: 84%;
   top: 550px;
-  z-index: -1;
+  z-index: -2;
+}
 
-  transition: opacity 0.05s linear;
+.pet-bg-fade-mask {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 85%,
+    #FFFFFF 90%
+  );
 }
 
 @media (max-width: 1700px) {
