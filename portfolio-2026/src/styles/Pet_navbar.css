@@ -1,9 +1,15 @@
 .pet-navbar {
+  /* position: fixed;  */
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2% 4%;
+  padding: 2% 4%;
   font-family: "Roboto", sans-serif;
+  z-index: 101;
+  background-color: #FFFFFF;
 }
 
 .pet-navbar a {
