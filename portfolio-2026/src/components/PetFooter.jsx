@@ -59,11 +59,11 @@ const PetFooter = () => {
       <div className="pet-footer-contacts">
         <div className="pet-footer-contact">
           <img src={Rover} alt="Rover logo" className="pet-footer-logo"/>
-          <a href="">xxxxxxxxxxxx</a>
+          <a href="https://www.rover.com/members/christelle-r-chiens-ou-chats-oui/">christelle-r</a>
         </div>
         <div className="pet-footer-contact">
           <img src={Envelope} alt="Mail logo" className="pet-footer-logo-green"/>
-          <a href="mailto">krystell.r.83@gmail.com</a>
+          <a href="mailto:krystell.r.83@gmail.com">krystell.r.83@gmail.com</a>
         </div>
       </div>
     </div>

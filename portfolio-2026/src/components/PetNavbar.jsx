@@ -27,7 +27,7 @@ const PetNavbar = ({ onClick }) => {
   };
 
   return (
-    <div>
+    <div id="petnavbar">
 
         {isMobile ? (
           <div className="pet-navbar">
