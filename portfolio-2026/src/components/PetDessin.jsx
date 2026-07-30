@@ -45,7 +45,7 @@ const PetDessin = () => {
 
   return (
     <div id="portraits">
-      <h1>Pet-sitting et dessin</h1>
+      <h1 className="text-white-bg">Pet-sitting et dessin</h1>
 
     {isMobile ? (
       <div className="dessin-infos">
@@ -62,13 +62,13 @@ const PetDessin = () => {
         <div className="dessin-crayon">
           <h2>Crayon gris</h2>
           <img src={Spike} alt="dessin animal au crayon gris" />
-          <p className="dessin-tarifs">À partir de <span>15€</span> de plus</p>
+          <p className="dessin-tarifs text-white-bg">À partir de <span>15€</span> de plus</p>
         </div>
 
         <div className="dessin-aquarelle">
           <h2>Aquarelle</h2>
           <img src={Koka} alt="dessin animal à l'aquarelle" />
-          <p className="dessin-tarifs">À partir de <span>25€</span> de plus</p>
+          <p className="dessin-tarifs text-white-bg">À partir de <span>25€</span> de plus</p>
         </div>
       </div>
     ):(
@@ -76,7 +76,7 @@ const PetDessin = () => {
         <div className="dessin-crayon">
           <h2>Crayon gris</h2>
           <img src={Spike} alt="dessin animal au crayon gris" />
-          <p className="dessin-tarifs">À partir de <span>15€</span> de plus</p>
+          <p className="dessin-tarifs text-white-bg">À partir de <span>15€</span> de plus</p>
         </div>
         <div className="dessin-text">
           <p>Dessinatrice de profession, j'ai décidé d'associer ma passion des animaux à mon métier pour proposer à mes clients une offre exceptionnelle!
@@ -90,7 +90,7 @@ const PetDessin = () => {
         <div className="dessin-aquarelle">
           <h2>Aquarelle</h2>
           <img src={Koka} alt="dessin animal à l'aquarelle" />
-          <p className="dessin-tarifs">À partir de <span>25€</span> de plus</p>
+          <p className="dessin-tarifs text-white-bg">À partir de <span>25€</span> de plus</p>
         </div>
       </div>
     )}

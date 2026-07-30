@@ -14,7 +14,7 @@
 }
 
 .pet-avis {
-  width: 20%;
+  width: 25%;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #044730;
@@ -31,7 +31,11 @@
 .pet-avis-animal {
   color: #096E4C;
   font-weight: 600;
-  margin-bottom: 10px;
+}
+
+.pet-avis-text {
+  margin-top: 10px;
+  white-space: pre-line;
 }
 
 @media (max-width: 850px) {

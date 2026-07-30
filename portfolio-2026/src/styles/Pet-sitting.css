@@ -4,6 +4,7 @@ html {
 
 .pet-body {
   position: relative;
+  overflow: hidden;
 }
 
 .pet-bg-paws {
@@ -26,6 +27,15 @@ html {
     transparent 85%,
     #FFFFFF 90%
   );
+}
+
+.text-white-bg {
+  background-color: white;
+}
+
+.width-fit-content {
+  width: fit-content;
+  margin: auto;
 }
 
 .up-to-navbar {

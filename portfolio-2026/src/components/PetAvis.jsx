@@ -3,11 +3,7 @@ import { useEffect, useState, useRef } from "react";
 
 import Line from "../assets/images/SVG/Pet-line.svg"
 
-const avisList = [
-  { nom: "Suzie et Sébastien", animal: "Koka, chat", texte: "Lorem ipsum dolor sit amet consectetur. Convallis aenean mauris enim lectus." },
-  { nom: "Célie et Laure", animal: "Spike, chien", texte: "Lorem ipsum dolor sit amet consectetur. Convallis aenean mauris enim lectus." },
-  { nom: "Lucie et Yves", animal: "Happy, chat", texte: "Lorem ipsum dolor sit amet consectetur. Convallis aenean mauris enim lectus." },
-];
+import AvisList from "../Data/AvisList.js"
 
 const PetAvis = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 850);
@@ -15,7 +11,7 @@ const PetAvis = () => {
   const [isSliding, setIsSliding] = useState(false);
   const intervalRef = useRef(null);
 
-  const nextIndex = (currentIndex + 1) % avisList.length;
+  const nextIndex = (currentIndex + 1) % AvisList.length;
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 850);
@@ -40,9 +36,9 @@ const PetAvis = () => {
 
   const renderAvis = (avis, key) => (
     <div className="pet-avis" key={key}>
-      <h3>{avis.nom}</h3>
-      <p className="pet-avis-animal">{avis.animal}</p>
-      <p className="pet-avis-text">{avis.texte}</p>
+      <h3 className="text-white-bg width-fit-content">{avis.nom}</h3>
+      <p className="pet-avis-animal text-white-bg width-fit-content">{avis.animal}</p>
+      <p className="pet-avis-text text-white-bg">{avis.texte}</p>
     </div>
   );
 
@@ -56,12 +52,12 @@ const PetAvis = () => {
               className={`pet-avis-track ${isSliding ? "is-sliding" : ""}`}
               onTransitionEnd={handleTransitionEnd}
             >
-              {renderAvis(avisList[currentIndex], "current")}
-              {renderAvis(avisList[nextIndex], "next")}
+              {renderAvis(AvisList[currentIndex], "current")}
+              {renderAvis(AvisList[nextIndex], "next")}
             </div>
           </div>
         ) : (
-          avisList.map((avis, i) => renderAvis(avis, i))
+          AvisList.map((avis, i) => renderAvis(avis, i))
         )}
       </div>
     </div>
