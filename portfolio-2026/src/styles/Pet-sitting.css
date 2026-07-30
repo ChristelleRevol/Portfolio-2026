@@ -4,7 +4,7 @@ html {
 
 .pet-body {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .pet-bg-paws {
