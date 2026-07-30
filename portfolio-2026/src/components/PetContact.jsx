@@ -34,7 +34,7 @@ const PetContact = () => {
 
         <div className="petcontact-infos">
           <img src={Phone} alt="Logo téléphone" className="petcontact-logo-white"/>
-          <a href="http://localhost:5000/api/whatsapp-redirect" className="petcontact-contact" target="_blank" rel="noopener noreferrer">
+          <a href="/api/whatsapp-redirect" className="petcontact-contact" target="_blank" rel="noopener noreferrer">
              Contact WhatsApp
           </a>
         </div>
