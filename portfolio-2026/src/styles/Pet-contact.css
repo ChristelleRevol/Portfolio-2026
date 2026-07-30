@@ -90,6 +90,13 @@
   margin-top: 15px;
 }
 
+.petcontact-contact {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
 .petcontact-infos {
   display: flex;
   align-items: center;
