@@ -34,6 +34,10 @@ app.post('/contact', async (req, res) => {
   res.status(200).json({ success: true })
 })
 
+app.get('/api/whatsapp-redirect', (req, res) => {
+  res.redirect(302, `https://wa.me/${process.env.WHATSAPP_NUMBER}`)
+})
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Serveur démarré sur le port ${PORT}`));
 
