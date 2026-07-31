@@ -48,22 +48,22 @@ const PetFooter = () => {
 
       ) : (
         <div className="pet-footer-menu">
-        <a href="#accueil">Accueil</a>
-        <a href="#a-propos">À propos</a>
-        <a href="#services">Services & Tarifs</a>
-        <a href="#portraits">Portraits</a>
-        <a href="#contact">Contact</a>
+        <a href="#accueil" className="petfooter-menu-effects">Accueil</a>
+        <a href="#a-propos" className="petfooter-menu-effects">À propos</a>
+        <a href="#services" className="petfooter-menu-effects">Services & Tarifs</a>
+        <a href="#portraits" className="petfooter-menu-effects">Portraits</a>
+        <a href="#contact" className="petfooter-menu-effects">Contact</a>
       </div>
       )}
 
       <div className="pet-footer-contacts">
         <div className="pet-footer-contact">
           <img src={Rover} alt="Rover logo" className="pet-footer-logo"/>
-          <a href="https://www.rover.com/members/christelle-r-chiens-ou-chats-oui/">christelle-r</a>
+          <a href="https://www.rover.com/members/christelle-r-chiens-ou-chats-oui/" className="petcontact-link-effect petcontact-link">christelle-r</a>
         </div>
         <div className="pet-footer-contact">
           <img src={Envelope} alt="Mail logo" className="pet-footer-logo-green"/>
-          <a href="mailto:krystell.r.83@gmail.com">krystell.r.83@gmail.com</a>
+          <a href="mailto:krystell.r.83@gmail.com" className="petcontact-link-effect petcontact-link">krystell.r.83@gmail.com</a>
         </div>
       </div>
     </div>

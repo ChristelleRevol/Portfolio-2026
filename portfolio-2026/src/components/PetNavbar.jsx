@@ -53,10 +53,10 @@ const PetNavbar = ({ onClick }) => {
           <div className="pet-navbar">
             <p>Christelle <span>Revol</span></p>
             <div className="pet-links">
-              <a href="#accueil">Accueil</a>
-              <a href="#a-propos">À propos</a>
-              <a href="#services">Services & Tarifs</a>
-              <a href="#portraits">Portraits</a>
+              <a href="#accueil" className="petnavbar-link-effect petnavbar-link">Accueil</a>
+              <a href="#a-propos" className="petnavbar-link-effect petnavbar-link">À propos</a>
+              <a href="#services" className="petnavbar-link-effect petnavbar-link">Services & Tarifs</a>
+              <a href="#portraits" className="petnavbar-link-effect petnavbar-link">Portraits</a>
             </div>
             <div className={`pet-btn-contact pet-fx-wrapper ${isActive ? "is-active" : ""}`}
             onClick={handleClick}>
