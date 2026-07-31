@@ -29,19 +29,19 @@ const PetContact = () => {
       <div className="petcontact-infos-list">
         <div className="petcontact-infos">
           <img src={Rover} alt="Logo Rover" />
-          <a href="https://www.rover.com/members/christelle-r-chiens-ou-chats-oui/" className="petcontact-contact">christelle-r</a>
+          <a href="https://www.rover.com/members/christelle-r-chiens-ou-chats-oui/" className="petcontact-contact petcontact-link-effect petcontact-link">christelle-r</a>
         </div>
 
         <div className="petcontact-infos">
           <img src={Phone} alt="Logo téléphone" className="petcontact-logo-white"/>
-          <a href="/api/whatsapp-redirect" className="petcontact-contact" target="_blank" rel="noopener noreferrer">
+          <a href="/api/whatsapp-redirect" className="petcontact-contact petcontact-link-effect petcontact-link" target="_blank" rel="noopener noreferrer">
              Contact WhatsApp
           </a>
         </div>
 
         <div className="petcontact-infos">
           <img src={Envelope} alt="Logo mail" className="petcontact-logo-white"/>
-          <a href="mailto:krystell.r.83@gmail.com" className="petcontact-contact">krystell.r.83@gmail.com</a>
+          <a href="mailto:krystell.r.83@gmail.com" className="petcontact-contact petcontact-link-effect petcontact-link">krystell.r.83@gmail.com</a>
         </div>
       </div>
 
