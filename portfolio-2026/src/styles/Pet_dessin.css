@@ -56,6 +56,7 @@
   margin: auto 0;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  text-align: justify;
 }
 
 .dessin-offert {
@@ -98,11 +99,15 @@
   align-self: end;
 }
 
-.dessin-groupe-photos img {
+.pc-photo-and-animal {
   width: 400px;
   height: fit-content;
   border-radius: 15px;
 }
+
+/* .dessin-groupe-photos img {
+
+} */
 
 .dessin-wave {
   align-self: end;
@@ -121,6 +126,13 @@
 
 .pet-dessin-arrow {
   filter: brightness(0) saturate(100%) invert(21%) sepia(83%) saturate(393%) hue-rotate(108deg) brightness(98%) contrast(95%);
+  width: 50px;
+}
+
+@media (min-width: 2100px) {
+  .dessin-groupe-photos {
+    width: 65%;
+  }
 }
 
 @media (max-width: 1650px) {
@@ -145,27 +157,25 @@
 /* CAROUSEL */
 
 @media (max-width:1350px){
-
   .dessin-groupe-photos{
+    width: auto;
+    margin: auto;
 
-    max-width:100%;
-    margin:0;
-
-    justify-content:flex-start;
-    gap:20px;
+    align-items: center;
 
     overflow-x:auto;
     overflow-y:hidden;
-
-    scroll-behavior:smooth;
-
-    padding-inline:80px;
 
     scrollbar-width:none;
   }
 
   .dessin-groupe-photos::-webkit-scrollbar{
     display:none;
+  }
+
+  .photo-and-animal {
+    width: 80%;
+    border-radius: 15px;
   }
 
   .pet-slide-btn-group {
@@ -178,14 +188,10 @@
   }
 
   .slider-btn{
-
     display: flex;
 
-    /* top:50%;
-    transform:translateY(-50%); */
-
-    width:48px;
-    height:48px;
+    /* width:48px;
+    height: 48px; */
 
     border:none;
     border-radius:50%;
@@ -199,15 +205,13 @@
   }
 
   .slider-btn, .left{
-    margin-left:10px;
+    margin-right:20px;
   }
 
   .slider-btn, .right{
-    margin-right:10px;
+    margin-left:20px;
   }
-}
 
-@media (max-width: 1150px) {
   .dessin-infos {
     flex-direction: column;
     align-items: center;
@@ -219,21 +223,39 @@
   }
 }
 
-@media (max-width: 500px) {
-  .dessin-text, .dessin-aquarelle,
+@media (max-width: 800px) {
+  #portraits h1 {
+    width: 80%;
+  }
+
+  .dessin-infos {
+    width: 100%;
+  }
+
+  .dessin-aquarelle,
   .dessin-crayon {
     width: 90%;
   }
-  .dessin-restants {
-    font-size: 16px;
+
+  .dessin-text {
+    width: 75%;
   }
-  .dessin-groupe-photos img {
-    width: 250px;
+
+  .pet-dessin-arrow {
+    width: 35px;
   }
 }
 
-@media (max-width: 400px) {
-  .dessin-groupe-photos {
-    padding-inline: 50px;
+@media (max-width: 500px) {
+  .dessin-restants {
+    font-size: 16px;
+  }
+
+    .slider-btn, .left{
+    margin-right:10px;
+  }
+
+  .slider-btn, .right{
+    margin-left:10px;
   }
 }

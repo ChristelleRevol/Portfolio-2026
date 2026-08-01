@@ -8,7 +8,7 @@ import PetContact from "../components/PetContact"
 import PetAvis from "../components/PetAvis"
 
 import PawsBg from "../assets/images/Pets/Paws2.svg"
-import Up from "../assets/images/SVG/arrow-circle-up.svg"
+import Up from "../assets/images/SVG/arrow-circle-up-orange.svg"
 
 import "../styles/Pet-sitting.css"
 // import { useState, useEffect } from "react";
@@ -35,7 +35,7 @@ const PetSitting = () => {
   // };
 
   return (
-    <div>
+    <div className="petsitting-page-wrapper">
       <PetNavbar />
       <div className="pet-body">
         <img src={PawsBg} alt="" className="pet-bg-paws"/>

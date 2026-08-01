@@ -200,8 +200,20 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
   #pet-contact {
-    width: 90%;
+    width: 80%;
+  }
+  .petcontact-rectangle-div {
+    width: 75%;
+  }
+}
+
+@media (max-width: 850px) {
+  #pet-contact {
+    width: 80%;
+  }
+  .petcontact-rectangle-div {
+    width: 85%;
   }
 }
