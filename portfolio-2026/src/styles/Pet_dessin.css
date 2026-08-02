@@ -158,13 +158,13 @@
 
 @media (max-width:1350px){
   .dessin-groupe-photos{
-    width: auto;
     margin: auto;
 
     align-items: center;
+    justify-content: center;
 
-    overflow-x:auto;
-    overflow-y:hidden;
+    /* overflow-x:auto;
+    overflow-y:hidden; */
 
     scrollbar-width:none;
   }
@@ -204,14 +204,6 @@
     align-items:center;
   }
 
-  .slider-btn, .left{
-    margin-right:20px;
-  }
-
-  .slider-btn, .right{
-    margin-left:20px;
-  }
-
   .dessin-infos {
     flex-direction: column;
     align-items: center;
@@ -249,13 +241,5 @@
 @media (max-width: 500px) {
   .dessin-restants {
     font-size: 16px;
-  }
-
-    .slider-btn, .left{
-    margin-right:10px;
-  }
-
-  .slider-btn, .right{
-    margin-left:10px;
   }
 }
