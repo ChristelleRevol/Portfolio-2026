@@ -17,7 +17,7 @@ const PetContact = () => {
 
   <div className="petcontact-rectangle-div">
     {/* <img src={Rectangle} alt="" className="petcontact-rectangle"/> */}
-    <div className="petcontact-rectangle"/>
+    <div className="petcontact-rectangle">
 
     <div className="petcontact-text-rectangle">
       <p>
@@ -45,6 +45,7 @@ const PetContact = () => {
         </div>
       </div>
 
+    </div>
     </div>
   </div>
 
